@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+#map {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:681px;
+	background:url(../images/designs/allstyle_imagemap.jpg) top left no-repeat #fff;
+	font-family:arial, helvetica, sans-serif;
+	font-size:9pt;
+}
+		
+#map li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#map li a {
+	position:absolute;
+	display:block;
+	/*
+	   Specifying a background image
+	   (a 1px by 1px transparent gif)
+	   fixes a bug in older versions of
+	   IE that causeses the block to not
+	   render at its full dimensions.
+	*/
+	background:url(blank.gif);
+	text-decoration:none;
+	color:#000;
+}
+
+#map li a span { 
+	display:none; 
+}
+
+#map li a:hover span {
+	position:relative;
+	display:block;
+	width:200px;
+	left:20px;
+	top:20px;
+	border:2px solid #000;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius:8px;
+	background:#fff;
+	padding:8px;
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+	
+#map a.q_products {
+	top: 328px;
+	left: 243px;
+	width: 87px;
+	height: 200px;
+}
+		
+#map a.our_features {
+	top: 98px;
+	left: 890px;
+	width: 109px;
+	height: 288px;
+}
+		
+#map a.landscaping {
+	top: 18px;
+	left: 13px;
+	width: 147px;
+	height: 554px;
+}
+		
+#map a.landscaping2 {
+	top: 581px;
+	left: 14px;
+	width: 547px;
+	height: 110px;
+}
+		
+#map a.fixtures {
+	top: 382px;
+	left: 348px;
+	width: 133px;
+	height: 198px;
+}
+		
+#map a.inclusions1 {
+	top: 385px;
+	left: 573px;
+	width: 422px;
+	height: 242px;
+}
+		
+#map a.inclusions2 {
+	top: 281px;
+	left: 574px;
+	width: 283px;
+	height: 103px;
+}

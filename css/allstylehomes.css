@@ -1,0 +1,860 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* This CSS formats the marque title that moves left to right at top of every page. */
+
+/*
+.marquee_head {
+	width: 38em;
+	margin-top:10px;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+	font-size: 15pt;
+	color: #b40c00;
+	text-align:left;
+	font-weight: bold;
+}
+*/
+
+/* Formats text/fonts */
+p {
+	text-align: left;
+	font-size: 12pt;
+	font-family:Verdana, Arial, helvetica, san serif;
+	color: #000000;
+}
+
+.h1 {
+	text-align: left;
+	font-style: strong;
+	font-size: 24pt;
+	font-weight: 800;
+	text-decoration: underline;
+	letter-spacing: -2px;
+	color: #b40c00;
+}
+.h2 {
+	text-align: left;
+	font-size: 20pt;
+	font-weight: 700;
+	color: #b40c00;
+}
+
+.h3 {
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.h4 {
+	font-size: 10pt;
+}
+.h5 {
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 500;
+	color: #000000;
+}
+.c2 {
+	text-align: center;
+}
+
+p.questions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: 800;
+	font-style: italic;
+	/*text-indent: 50px;*/
+}
+.faqquestions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: 800;
+	font-style: italic;
+	color: #e86600;
+}
+.statement {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 500;
+	font-style: italic;
+	/*padding-left: 30px;
+	padding-right: 30px;*/
+	text-align: justify;
+}
+.txtindent {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 500;
+	padding-left: 30px;
+	text-align: justify;
+}
+p.cl {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 500;
+	color: #e86600;
+}
+.clbold {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.bo {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 700;
+}
+
+/* Indents and justifies unordered-list for Value Statements */
+
+
+
+ul.valu_ullist {
+	margin-left: 40px;
+	margin-bottom: 45px;
+	list-style-position: outside;
+	text-align: justify;
+}
+li.valu_lilist{
+    margin-top: 10px;
+	margin-right: 30px;
+}
+ul.process {
+	color: #e86600;
+}
+ol.process {
+	color: #e86600;
+}
+
+
+ul.sitemap {
+	line-height: 20px;
+}
+
+
+
+
+/* Formats heading (as per logo) in side bar*/
+.t_black {
+	color: #000000;
+	font-size:20px;
+}
+.t_tan {
+	color: #b40c00;
+	font-size: 22px;
+}
+
+
+/* Centres images/logos in sidebar */
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 119px;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+img.center2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 300px;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+img.large {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 92%;
+	height: auto;
+	border-style: solid;
+}
+img.plan {
+	width: 100%;
+	float: left;
+	margin-right: 10px;	
+	margin-top: 15px;
+}
+
+/* Formats and positions spacer image in main & sidebar */
+img.textspacer1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 50%;
+	height: auto;
+}
+img.sidespacer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 6px;
+}
+
+.loader_gif {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 17%;
+}
+
+.gmap {
+	border-style: solid;
+	border-width: 10px;
+	border-color: #000000;
+}
+
+
+/* Positions images - left & right justified - in main */
+.img_left {
+	float: left;
+	width: 40%;
+	height: auto;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.img_right {
+	float: right;
+	width: 40%;
+	height: auto;
+	margin-left: 15px;
+}
+
+.back2top {
+	width: 17%;
+	height: auto;
+	float:right;
+	margin-top:-15px;
+}
+
+
+
+.hvr-pulse {
+	/*width: 17%;
+	height: auto;*/
+	float:right;
+	margin-top: -15px;
+	margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+	-moz-transform:scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+	-moz-transform:scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+
+/*
+.img_popup {
+	width: 60%;
+	height: auto;
+}
+*/
+/*
+   Format links in the navigation bar
+a.class1:link {
+    color: #b40c00;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.class1:visited {
+    color: #e86600;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.class1:hover {
+    color: #b40c00;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.class1:active {
+    color: #e86600;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+*/
+
+/* Format links in the footer*/
+a.class2:link {
+	color: #000000;	
+	background-color: transparent;
+    text-decoration: none;
+}
+a.class2: visited {
+	color: #e86600;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.class2: hover {
+	color: #b40c00;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.class2: active {
+	color: #b40c00;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#plan {
+	width: 55%;
+	float: left;
+	margin-right: 5px;
+	margin-top: -25px
+}
+#dimensions {
+	width: 33%;
+	padding-left: 10px;
+	padding-right: 10px;
+	float:left;
+	/*float: right;*/
+}
+ul.dimentions {
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:-20px;
+	text-align:right;
+	/*padding-left: 22px;
+	padding-right: 2px;*/
+    }
+#features {
+	width: 45%;
+	padding-left: 10px;
+	float: left;
+	clear:both;
+}
+#inclusions {
+	width: 45%;
+	padding-left: 10px;
+	float: right;
+}
+
+#design_thumbs {
+	width: 482px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/*
+
+
+
+
+<div style="overflow:hidden;height:300px;width:87%;border-style: solid;
+	border-width: 3px; border-color: #e86600; margin-left: auto; margin-right: auto" >
+
+
+#gmap_canvas" {
+	height:300px;
+	width:550px;
+}
+
+
+
+
+
+
+
+*/
+
+
+/*
+blockquote {
+	width: 431px;
+	background-image:url("../images/testimonials/line_paper_4_sm.png");
+	margin-left:35px;
+	margin-right:10px;
+	padding-left: 52px;
+	padding-right: 15px;
+	font-size: 14px;
+	line-height: 21px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #ccc;
+	font-style: italic;
+
+}
+
+blockquote .author {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: 500;
+	color: #e86600;
+}
+
+blockquote:before{
+	position:relative;
+	margin-top:-20px;
+	margin-left:-20px;
+	content:url("../images/testimonials/pushpin_sm.png");
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+  quotes: 201C""\201D""\2018""\2019"";  */
+
+@media (min-width: 481px) and (max-width: 801px){
+	
+/* This CSS formats the marque title that moves left to right at top of every page. */
+.marquee_head {
+	width: 38em;
+	margin-top:10px;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+	font-size: 10pt;
+	color: #b40c00;
+	text-align:left;
+	font-weight: bold;
+}
+
+/* Formats text/fonts */
+p {
+	text-align: left;
+	font-size: 11pt;
+	font-family:Verdana, Arial, helvetica, san serif;
+	color: #000000;
+}
+.h1 {
+	text-align: left;
+	font-style: strong;
+	font-size: 18pt;
+	font-weight: 700;
+	text-decoration: underline;
+	letter-spacing: -2px;
+	color: #b40c00;
+}
+.h2 {
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 600;
+	color: #b40c00;
+}
+
+.h3 {
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.h4 {
+	font-size: 8pt;
+}
+.h5 {
+	text-align: left;
+	font-size: 14pt;
+	font-weight: 500;
+	color: #000000;
+}
+.c2 {
+	text-align: center;
+}
+
+p.questions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+	font-style: italic;
+	/*text-indent: 50px;*/
+}
+.faqquestions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+	font-style: italic;
+	color: #e86600;
+}
+.statement {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	font-style: italic;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+.txtindent {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	padding-left: 20px;
+	text-align: justify;
+}
+p.cl {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	color: #e86600;
+}
+.clbold {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.bo {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 700;
+}
+
+/* Indents and justifies unordered-list for Value Statements */
+
+ul.our_processes {
+	font-size: 11pt;
+}
+
+ul.valu_ullist {
+	colour: red;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	list-style-position: outside;
+	text-align: justify;
+}
+li.valu_lilist{
+    margin-top: 7px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+/* Positions images - left & right justified - in main */
+.img_left {
+	float: left;
+	width: 32%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.img_right {
+	float: right;
+	width: 32%;
+	height: auto;
+	margin-left: 10px;
+}
+
+.img_popup {
+	width: 60%;
+	height: auto;
+}
+
+enlarge.popup_sm {
+	width: 60%;
+	height: auto;
+}
+
+
+#design_thumbs {
+	width: 482px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#plan {
+	width: 45%;
+	float: left;
+	margin-right: 5px;
+	margin-top: -25px
+}
+
+#dimensions {
+	width: 40%;
+	font-size: 90%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 8%;
+	float:left;
+	/*float: right;*/
+}
+ul.dimentions {
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:-20px;
+	text-align:left;
+	/*padding-left: 22px;
+	padding-right: 2px;*/
+    }
+
+#features {
+	width: 45%;
+	font-size: 90%;
+	padding-left: 10px;
+	float: left;
+	clear:both;
+}
+
+#inclusions {
+	width: 45%;
+	font-size: 90%;
+	padding-left: 10px;
+	float: right;
+}
+
+
+}
+
+
+
+@media (max-width: 480px){
+	
+/* Positions images - left & right justified - in main */
+.img_left {
+	float: left;
+	width: 28%;
+	height: auto;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.img_right {
+	float: right;
+	width: 28%;
+	height: auto;
+	margin-left: 5px;
+}
+
+/* This CSS formats the marque title that moves left to right at top of every page. 
+.marquee_head {
+	width: 38em;
+	margin-top:10px;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+	font-size: 10pt;
+	color: #b40c00;
+	text-align:left;
+	font-weight: bold;
+}
+*/
+
+.marquee {
+	height:20px;
+}
+/* Formats text/fonts */
+p {
+	text-align: left;
+	font-size: 10pt;
+	font-family:Verdana, Arial, helvetica, san serif;
+	color: #000000;
+}
+.h1 {
+	text-align: left;
+	font-style: strong;
+	font-size: 16pt;
+	font-weight: 800;
+	text-decoration: underline;
+	letter-spacing: -2px;
+	color: #b40c00;
+}
+.h2 {
+	text-align: left;
+	font-size: 14pt;
+	font-weight: 700;
+	color: #b40c00;
+}
+
+.h3 {
+	text-align: left;
+	font-size: 10pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.h4 {
+	font-size: 7pt;
+}
+.h5 {
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 500;
+	color: #000000;
+}
+.c2 {
+	text-align: center;
+}
+
+p.questions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	font-style: italic;
+	/*text-indent: 50px;*/
+}
+.faqquestions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	font-style: italic;
+	color: #e86600;
+}
+.statement {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	font-style: italic;
+	padding-left: 15px;
+	padding-right: 30px;
+	text-align: justify;
+}
+.txtindent {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	padding-left: 15px;
+	text-align: justify;
+}
+p.cl {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	color: #e86600;
+}
+.clbold {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 500;
+	color: #e86600;
+}
+.bo {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 600;
+}
+
+/* Indents and justifies unordered-list for Value Statements */
+
+ul.our_processes {
+	font-size: 10pt;
+}
+
+
+ul.valu_ullist {
+	colour: red;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	list-style-position: outside;
+	text-align: justify;
+}
+li.valu_lilist{
+    margin-top: 4px;
+	margin-right: 15px;
+	font-size: 12px;
+}
+
+#design_thumbs {
+	width: 340px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+#plan {
+	width: 75%;
+	height: auto;
+	/*float: left;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -25px
+}
+/*
+#dimensions {
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	clear: left;
+	font-size: 14px;
+}
+*/
+
+#dimensions {
+	width: 100%;
+	font-size: 90%;
+	padding-left: 10px;
+	padding-right: 10px;
+	float:left;
+	/*float: right;*/
+}
+ul.dimentions {
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:-20px;
+	text-align:left;
+	/*padding-left: 22px;
+	padding-right: 2px;*/
+    }
+
+
+#features {
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	clear:left;
+	font-size: 14px;
+}
+#inclusions {
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	clear:left;
+	font-size: 14px;
+}
+
+
+}

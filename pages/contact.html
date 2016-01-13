@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AllStyles Homes</title>
+	
+    
+	<link href="../css/mystyles.css" rel="stylesheet" type="text/css">
+	<link href="../css/allstylehomes.css" rel="stylesheet" type="text/css">
+	<link href="../css/ash_nav_styles.css" rel="stylesheet" type="text/css">
+    
+    <!-- The CSS below configures the Contact Form. -->
+    <!-- Following two lines, link to CSS & JS for Responsive Drop-Down Navigation -->
+    <link href="../css/ddmenu.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/ddmenu.js" type="text/javascript"></script>
+    
+    
+    
+    <!-- JavaScript for GoogleMaps --> 
+    <!-- The following accesses the javascript from the Google websit to enable GoogleMaps -->
+	<script type="text/javascript" 
+		src="http://maps.google.com/maps/api/js?sensor=false">
+    </script>
+ 
+<!-- NOTE: Below script for GoogleMap sourced from:  http://www.map-embed.com/  -->
+
+  	<script type="text/javascript"> 
+		function init_map(){
+			var myOptions = {zoom:16,center:new google.maps.LatLng(-24.8520522,152.39065619999997),mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			;map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({
+				map: map,position: new google.maps.LatLng(-24.8520522, 152.39065619999997)
+				}
+			);infowindow = new google.maps.InfoWindow({
+				content:"<b>AllStyle Homes</b><br/>255 Serenity Drive<br/> Bundaberg" 
+			}
+			);google.maps.event.addListener(marker, "click", 
+			function(){
+				infowindow.open(map,marker);});infowindow.open(map,marker);
+			}
+			google.maps.event.addDomListener(window, 'load', init_map);
+  	</script>
+ 
+ <!-- End of Google Map Section -------------------------------- -->
+
+</head>
+
+
+
+<body>
+<div id="wrapper">
+
+
+<!--Headers (Left/Right) Section ------------------------- -->
+
+  <div id="leftHeader">
+  </div>
+  
+  
+  <div id="rightHeader">
+  	<span class="t_black">AllStyle <span class="t_tan">Homes</span></span><br>
+    <p class="righthead">255 Serenity Drive<br>
+    Bundaberg QLD 4670 <br>
+    Ph: 07 4153 9876</p>
+  </div>
+  <!--End of Headers (Left/Right) Section ------------------------- -->
+  
+  <!--Navigation Bar (DropDown) Section ----------------------- -->
+  
+  <nav id="ddmenu">
+    <div class="menu-icon"></div>
+    <ul>
+        <li><a href="../index.html" class="top-heading" >Home</a></li>
+        <li><a href="about.html" class="top-heading" >About</a></li>
+        <li><a href="designs.html" class="top-heading" >Designs</a>
+			<i class="caret"></i>           
+            <div class="dropdown mayRight">
+                <div class="dd-inner">
+                    <div class="column">
+                        <h3>Designs</h3>
+                        <a href="barclay.html">Barclay</a>
+                        <a href="jannsen.html">Jannsen</a>
+                        <a href="novelli.html">Novelli</a>
+                        <a href="preston.html">Preston</a>
+                        <a href="ridgely.html">Ridgely</a>
+                        <a href="sienna.html">Sienna</a>
+                     </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="process.html" class="top-heading">Process</a></li>
+        <li><a href="faq.html" class="top-heading">FAQ</a></li>
+		<li><a href="testimonials.html" class="top-heading">Testimonials</a></li>
+        <li><a href="contact.html" class="top-heading">Contact</a></li>
+     </ul>
+</nav>
+  
+  
+  <div id="main">
+ 
+    <img src="../images/contact/ash_contact_us.png" alt="Contact Us banner." class="large"/>
+
+<!--End of Navigation Bar (DropDown) Section ---------------- -->  
+
+<!--Contact Form Section ------------------------------------ -->
+
+<div id="contact-form" >
+    <h1>Get In Touch!</h1>
+    <span class="contact_form_h2">We value your comments and welcome your questions. Fill out our form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</span><br><br>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+    <form method="post" action="process.php">
+        <label for="name">Name: <span class="required">*</span></label>
+<label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="enquiry">Enquiry: </label>
+        <select id="enquiry" name="enquiry">
+            <option value="general">General Inquiry</option>
+            <option value="sales">Arrrange An Appointment</option>
+            <option value="support">Existing Client Support</option>
+        </select>
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="SUBMIT" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+    <br><br><br>
+</div>
+
+<!--End of Contact Form Section ------------------------------ -->
+
+ 
+ <!--Google Map Section -------------------------------------- -->
+
+  		<div id="gmap_canvas" >
+    
+		<!-- Style sheet for GoogleMaps -->
+
+  		<style>
+			#gmap_canvas img{max-width:none!important;background:none!important}
+    	</style>
+    
+    
+  		<a href="http://www.themecircle.net" id="get-map-data"> wordpress themes class="google-map-code" </a>
+        
+       </div> 
+ 	
+    <!-- </div>  <!-- Closes "mymap" DIV  -->
+    
+    
+
+	 <br /><p>...</p>
+    
+ 	<img src="../images/spacer1.png" alt="Text divider to separate paragrapghs." class="textspacer1"/>
+    
+
+  </div>  <!-- Closes "main" DIV  -->
+  
+  
+  <!--SideBar Section ----------------------------------- -->
+  
+  <div id="sidebar">
+  
+  <h4 class="c2">We appreciate the support of:  </h4>
+  	
+    <a href="http://www.timstewartarchitects.com.au/" target="_blank"><img src="../images/logo/tim_stewart_architect_logo.png" alt="Tim Stewart Architects logo" class="center"/>
+    </a>
+    
+    <a href="http://www.rams.com.au/" target="_blank"><img src="../images/logo/rams_logo2.png" alt="RAMS Home Loans logo" class="center"/>
+    </a>
+    
+    	
+        
+    <p><img src="../images/spacer1.png" alt="Text divider to separate paragrapghs." class="sidespacer" />
+    </p>
+        
+    
+    
+    <a href="http://www.parksidegroup.com.au/" target="_blank"><img src="../images/logo/parksidegroupe_logo.png" alt="Parkside Group logo" class="center"/>
+    </a>
+    
+   	<a href="http://www.holcim.com.au/" target="_blank"><img src="../images/logo/holcimaustralia_logo.png" alt="Holcim Australia logo" class="center">
+	</a>
+  	
+    <a href="http://hewittelectrical.com.au/" target="_blank"><img src="../images/logo/neil_hewitt_elec&air_logo.png" alt="Neil Hewitt Elec & Air logo" class="center"/>
+    </a>
+  	
+    <a href="http://www.ridgewayroof.com.au/" target="_blank"><img src="../images/logo/ridgeway_logo.png" alt="Ridgeway Roofing Supplies logo." class="center"/>
+    </a>
+    
+    <a href="../www.metrotiles.com.au" target="_blank"><img src="../images/logo/metrotiles_logo.jpg" alt="Metrotiles logo." class="center"/>
+    </a>
+    
+    <a href="http://www.cwp.com.au/" target="_blank"><img src="../images/logo/wholesalepaintgroup_logo.png" alt="wholesale paint group logo" class="center"/>
+  	</a>
+    
+    <a href="../www.bunnings.com.au" target="_blank"><img src="../images/logo/bunnings.png" alt="Bunnings Warehouse logo." class="center"/>
+    </a>
+    
+    
+    	
+    <p><img src="../images/spacer1.png" alt="Text divider to separate paragrapghs." class="sidespacer" />
+    </p>
+        
+    
+    
+    <a href="https://www.qbcc.qld.gov.au/" target="_blank"><img src="../images/logo/qbcc_logo.png" alt="Qld Building and Construction Commission logo" class="center"/>
+    </a>
+    <a href="https://www.cbussuper.com.au" target="_blank"><img src="../images/logo/cbus_ais_logo.png" alt="cbus – an industry superfund logo" class="center"/>
+    </a>
+    
+  </div>
+  
+   <!--End of SideBar Section ------------------------- -->
+   
+   
+    <!--Footer Section -------------------------------- -->
+  <div id="footer">
+  		<a href="../documents/terms_and_conditions.pdf" target="_blank" class="class2">Terms and Conditions</a> |
+        <a href="../documents/privacy_statement.pdf" target="_blank" class="class2">Privacy Statement</a> |
+		<a href="sitemap.html" class="class2">Sitemap</a> |
+        &copy; 2015 AllStyle Homes
+  </div>
+  
+  <!--End of Footer Section -------------------------------- -->
+  
+</div>
+</body>
+</html>
