@@ -1,24 +1,134 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* This CSS formats the marque title that moves left to right at top of every page. */
+/*  
+>>>>  TABLE OF CONTENT  <<<<
 
-/*
-.marquee_head {
-	width: 38em;
-	margin-top:10px;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-	font-size: 15pt;
-	color: #b40c00;
-	text-align:left;
-	font-weight: bold;
-}
+1. General Layout
+2. General text/fonts and images
+3. Back-To-The-Top Button 
+4. Footer links
+5. Drop-Down Menu (Navigation Bar)
+6. Design Page 
+	6.1 ImageMap
+	6.2 Pop-up Thumb-nails
+	6.3 Individual house layout
+	6.4 "Exploded" views of architectural drawings
+7. Process Page
+	7.1 Slideshow
+	7.2 Tabbed textbox
+8 Contact Page
+	8.1 Contact details layout
+	8.2 GoogleMaps
+
 */
 
-/* Formats text/fonts */
+
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+This section configures the general layout of the majority of the pages 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color:#fff ;
+}
+
+#wrapper {
+	width: 800px;
+	height: 998px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	/*height: auto;*/
+	font-family: Verdana, Arial, helvetica;
+}
+
+#leftHeader {
+	width: 396px;
+	height: 140px;
+	float: left;
+	background-color: #f6f6f6;
+	margin-right: 4px;
+	margin-bottom: 8px;
+	/*padding: 0px;*/
+	background-image: url(../images/logo/logo_390x140.png);
+	background-repeat: no-repeat;
+	background-size: 390px 140px;
+	background-position: center;
+}
+#rightHeader {
+	width: 306px;
+	height: 128px;
+	margin-left: 4px;
+	margin-bottom: 8px;
+	float: right;
+	background-color: #f6f6f6;
+	background-size: 305px 128px;
+	padding-top: 12px;
+	padding-left: 90px;
+}
+
+/* ==== NOTE: Navigation is configured further down ====== */
+
+#main {
+	width: 580px;
+	max-height: 800px;
+	min-height: 800px;
+	background-color: #f6f6f6;
+	float: left;
+	margin-right: 5px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	padding: 10px;
+	overflow-y: scroll;
+	overflow-x: no-display;
+}
+
+#sidebar {
+	width: 180px;
+	height:800px;
+	background-color: #f6f6f6;
+	float: right;
+	margin-left: 5px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#sidebar_process_page {
+	width: 180px;
+	height:800px;
+	background-color: #f6f6f6;
+	float: left;
+	margin-left: 5px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#footer {
+	width: 800px;
+	clear: both;
+	background-color: #f6f6f6;
+	font-size:10px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+	
+	
+
+/* ==================================================
+This section configures all general texts/fonts and images thoughout the site
+=====================================================*/
 p {
 	text-align: left;
 	font-size: 12pt;
@@ -109,9 +219,8 @@ p.cl {
 	font-weight: 700;
 }
 
+
 /* Indents and justifies unordered-list for Value Statements */
-
-
 
 ul.valu_ullist {
 	margin-left: 40px;
@@ -119,7 +228,7 @@ ul.valu_ullist {
 	list-style-position: outside;
 	text-align: justify;
 }
-li.valu_lilist{
+li.valu_lilist {
     margin-top: 10px;
 	margin-right: 30px;
 }
@@ -129,7 +238,6 @@ ul.process {
 ol.process {
 	color: #e86600;
 }
-
 
 ul.sitemap {
 	line-height: 20px;
@@ -219,12 +327,6 @@ img.sidespacer {
 	width: 17%;
 }
 
-.gmap {
-	border-style: solid;
-	border-width: 10px;
-	border-color: #000000;
-}
-
 
 /* Positions images - left & right justified - in main */
 .img_left {
@@ -248,7 +350,8 @@ img.sidespacer {
 	margin-top:-15px;
 }
 
-
+/* ==============================================
+This section configures the Back-To-The-Top Button ================================================ */
 
 .hvr-pulse {
 	/*width: 17%;
@@ -294,38 +397,10 @@ img.sidespacer {
 }
 
 
-/*
-.img_popup {
-	width: 60%;
-	height: auto;
-}
-*/
-/*
-   Format links in the navigation bar
-a.class1:link {
-    color: #b40c00;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.class1:visited {
-    color: #e86600;
-    background-color: transparent;
-    text-decoration: none;
-}
-a.class1:hover {
-    color: #b40c00;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a.class1:active {
-    color: #e86600;
-    background-color: transparent;
-    text-decoration: underline;
-}
+/* ==============================================
+This section configures the links in the footer ================================================ */
 
-*/
 
-/* Format links in the footer*/
 a.class2:link {
 	color: #000000;	
 	background-color: transparent;
@@ -347,6 +422,509 @@ a.class2: active {
     text-decoration: underline;
 }
 
+
+
+
+
+
+
+
+
+/* ==============================================
+ This section is for the Drop-Down Menu (Navigation Bar) throughout all page   ====================================================  */
+
+/* main menu ----------------------------*/
+#ddmenu {
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center; /*Specify the alignment of the whole UL if UL is not width:100%;*/
+    letter-spacing: normal;
+	width:100%;
+}
+
+
+#ddmenu ul {
+    margin:0 auto;
+    padding: 0;
+    text-align: center; /* Alignment of each top-level menu items within the UL */
+    width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+    font-size: 0;
+    background: #b40c00;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    z-index: 999;
+    border:none;
+	border-radius:2px;
+}
+
+#ddmenu li {
+    margin:0;
+    padding:0;
+    font-size: 12px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1; /*for IE6-7*/
+    position: relative;
+    color: #EEE;
+    line-height: 30px; /*This determines the height of the menu*/
+    transition: background-color 0.2s;
+    outline:none;
+	-moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#ddmenu li.full-width {
+    position: static;
+}
+
+#ddmenu li.over {
+    color:#FFF;
+background-color: rgba(255,255,255,0.35);
+background-color: #999 \9; /*fallback for old IE*/
+}
+
+#ddmenu li.over.no-sub {
+    
+}
+
+#ddmenu .top-heading {
+    font-weight: bold;
+    white-space: nowrap;
+    margin:0 22px;
+    color: inherit;
+    text-decoration: none;
+    display:inline-block; 
+    outline: 0;
+    cursor: pointer;
+}
+
+/* links of top-heading */
+#ddmenu li a, #ddmenu li a:link, #ddmenu li a:hover {
+    color: inherit;
+}
+#ddmenu li a:hover {
+    text-decoration:underline;
+}
+
+#ddmenu li a:focus {
+    outline:1px dotted #09F;
+}
+
+/* caret(arrow icon) */
+#ddmenu i.caret {
+    color: inherit;
+    left:-18px;
+    width: 0;
+    height: 0;
+    overflow: hidden; /*for IE6*/
+    vertical-align: middle;
+    margin-bottom: 2px;
+    border-top: 4px solid; /*caret size is 4px now*/
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    position:relative;
+}
+
+/* sub-menu layout
+----------------------------*/
+
+#ddmenu .dropdown {
+    width: 220px;
+    left: 0px;
+    color: #000000;
+    padding:0;margin:0;display:none;position:absolute;
+    top: 100%;
+    border:1px solid ;
+border-top:none;
+border-radius:0 0 4px 4px;
+background-color: rgba(180,12,0,0.51);
+background-color: #7691b4 \9; /*fallback for old IE*/
+}
+
+#ddmenu li.full-width .dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#ddmenu .offset300 {
+    left: -300px;right:auto;
+}
+
+#ddmenu .right-aligned {
+    left: auto;
+    right: 0px;
+}
+
+#ddmenu li.over .dropdown {
+    display: block;
+}
+
+#ddmenu .dd-inner {
+    text-align: center;
+    padding: 20px;
+    margin:16px;
+    background-color: #FFF;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height:1.35;
+}
+
+/* links in sub menu
+----------------------------*/
+
+#ddmenu .dropdown a {
+    display:table-row;
+    *display:block;
+    color: #333333;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 0;
+}
+
+#ddmenu .dropdown a:hover, #ddmenu .dropdown a:focus {
+    text-decoration: underline;
+    color: #b40c00;
+}
+
+/* blocks within the sub-menu
+-----------------------------*/
+#ddmenu div.column {
+    text-align: left;
+    vertical-align: top; /*or middle*/
+    display: inline-block;
+    *display: inline;*zoom: 1;
+    white-space:normal;
+    width:200px;
+padding:0 30px;
+border-right:1px solid #999;
+}
+
+#ddmenu div.dd-inner div:last-child {
+    border-right: none;
+}
+
+#ddmenu div.column h3 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+#ddmenu li {
+  border-left:1px solid #e86600;
+  border-right:1px solid #e86600; }
+#ddmenu li:first-child {border-left:none;}
+#ddmenu li:last-child {border-right:none;}
+#ddmenu div.column260 {width:260px;}
+#ddmenu div.column340 {width:340px;}
+
+/* useful when http://www.menucool.com/ddmenu/one-menu-for-all-pages */
+#ddmenuLink {display:none;}
+
+
+/*######## add additional styles for mobile-friendly responsive menu ########*/
+
+#ddmenu div.menu-icon {
+    display: none; /* hide menu icon initially */
+}
+
+
+
+
+
+/* >>>>>>>>>>> Design Page <<<<<<<<<<<<<< */
+
+
+/* ==============================================
+ This section is for the ImageMap in the "designs" page   ====================================================  */
+
+.main-content-area{
+background-color:#F6F6F6;
+min-height: 200px;
+width:96%;
+margin: 0 2% 1% 2%;
+position: relative;
+}
+.main-content-area img{
+width: 100%;
+height: auto;
+}
+
+img.shed {
+position: relative;
+}
+
+i.inclusions_tank {
+color: yellow;
+font-size: 50px;
+position: absolute;
+top: 50%;
+left: 64%;
+cursor: pointer;
+}
+
+i.inclusions_tank p {
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.inclusions_tank:hover p {
+opacity: 1;
+top: -50px;
+left:-45px;
+}
+
+
+
+i.landscaping {
+color: yellow;
+font-size: 50px;
+position: absolute;
+top: 78%;
+left: 8%;
+cursor: pointer;
+}
+
+i.landscaping p {
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 280%;
+padding: 8px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.landscaping:hover p {
+opacity: 1;
+top: -72px;
+left:-42px;
+z-index: 5;
+}
+
+
+
+i.products_fridge {
+color: yellow;
+font-size: 50px;
+position: absolute;
+top: 67%;
+left: 36%;
+cursor: pointer;
+}
+
+i.products_fridge p {
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.products_fridge:hover p {
+opacity: 1;
+top: -56px;
+left:-30px;
+}
+
+
+
+i.fixtures_door {
+color: yellow;
+font-size: 50px;
+position: absolute;
+top: 61%;
+left: 24%;
+cursor: pointer;
+}
+
+i.fixtures_door p {
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.fixtures_door:hover p {
+opacity: 1;
+top: -98px;
+left:-45px;
+}
+
+
+
+i.features_fireplace {
+color: yellow;
+font-size: 50px;
+position: absolute;
+top: 40%;
+left: 87%;
+cursor: pointer;
+}
+
+i.features_fireplace p {
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.features_fireplace:hover p {
+opacity: 1;
+top: -50px;
+left:-65px;
+}
+
+
+
+/* ====================================================
+ This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
+ =================================================== */
+ 
+ #design_thumbs {
+	width: 95%;
+	/*height: auto;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* The following script was sourced from http://cssdemos.tupence.co.uk/image-popup.htm  */
+
+	ul.enlarge {
+		list-style-type:none; /*remove the bullet point*/
+		margin-left:40px;
+		text-align: center;
+    }
+    ul.enlarge li {
+		display:inline-block; /*places the images in a line*/
+		font-size: 11px;
+		text-align: center;
+		position: relative;
+		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    	margin:10px 25px 2px -15px; /*margin:10px 40px 0 20px;*/
+    }
+    ul.enlarge img {
+		background-color:#eae9d4;
+		padding: 6px;
+		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
+	
+	ul.enlarge img.sm {
+		display:inline-block;
+		width: 131px;
+		height: auto;
+	}
+	ul.enlarge img.lg {
+		display:inline-block;
+		width: 520px;
+		height: auto;
+	}
+	
+    ul.enlarge span {
+		position:absolute;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
+    ul.enlarge li:hover {
+		z-index: 50;
+		cursor:pointer;
+    }
+    ul.enlarge span img {
+		padding:2px;
+		background:#ccc;
+    }
+    ul.enlarge li:hover span {
+		top: -240px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -41px; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    ul.enlarge li:hover:nth-child(2) span{
+    	left: -199px;
+    }
+    ul.enlarge li:hover:nth-child(3) span{
+    	left: -358px;
+    }
+    ul.enlarge li:hover:nth-child(4) span{
+		top: -372px;
+    	left: -40px;
+    }
+    ul.enlarge li:hover:nth-child(5) span{
+		top: -372px;
+    	left: -199px;
+    }
+	ul.enlarge li:hover:nth-child(6) span{
+		top: -372px;
+    	left: -358px;
+    }
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    	behavior: url(pie/PIE.htc);
+    }
+
+	
+
+/* ==============================================
+This section configures the various divs on the individual house design pages ================================================ */
 #plan {
 	width: 55%;
 	float: left;
@@ -386,475 +964,288 @@ ul.dimentions {
 	margin-left: auto;
 }
 
+/* ===================================================
+The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
+====================================================== */
 
-
-/*
-
-
-
-
-<div style="overflow:hidden;height:300px;width:87%;border-style: solid;
-	border-width: 3px; border-color: #e86600; margin-left: auto; margin-right: auto" >
-
-
-#gmap_canvas" {
-	height:300px;
-	width:550px;
-}
-
-
-
-
-
-
-
-*/
-
-
-/*
-blockquote {
-	width: 431px;
-	background-image:url("../images/testimonials/line_paper_4_sm.png");
-	margin-left:35px;
-	margin-right:10px;
-	padding-left: 52px;
-	padding-right: 15px;
-	font-size: 14px;
-	line-height: 21px;
-	border: 1px solid #ccc;
-	box-shadow: 1px 1px 1px #ccc;
-	font-style: italic;
-
-}
-
-blockquote .author {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 12pt;
-	font-weight: 500;
-	color: #e86600;
-}
-
-blockquote:before{
-	position:relative;
-	margin-top:-20px;
-	margin-left:-20px;
-	content:url("../images/testimonials/pushpin_sm.png");
-}
-
-blockquote cite:before {
-	content: "\2014 \2009";
-}
-
-  quotes: 201C""\201D""\2018""\2019"";  */
-
-@media (min-width: 481px) and (max-width: 801px){
+ul.exploded{
+		list-style-type:none; /*remove the bullet point*/
+		margin-left:0;
+    }
+    ul.exploded li{
+		display:inline-block; /*places the images in a line*/
+		font-size: 11px;
+		text-align: center;
+		position: relative;
+		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    	margin:20px 25px 2px -25px; /*margin:10px 40px 0 20px;*/
+    }
+    ul.exploded img{
+		background-color:#eae9d4;
+		padding: 6px;
+		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
 	
-/* This CSS formats the marque title that moves left to right at top of every page. */
-.marquee_head {
-	width: 38em;
-	margin-top:10px;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-	font-size: 10pt;
-	color: #b40c00;
-	text-align:left;
-	font-weight: bold;
-}
+	ul.exploded img.sm {
+		display:inline-block;
+		width: 131px;
+		height: auto;
+	}
+	ul.exploded img.lg {
+		display:inline-block;
+		width: 96%;
+		height: auto;
+	}
+	
+    ul.exploded span{
+		position:absolute;
+		left: -9999px;
+		width: 130%;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
+    ul.exploded li:hover{
+		z-index: 50;
+		cursor:pointer;
+    }
+    ul.exploded span img{
+		padding:2px;
+		background:#ccc;
+    }
+    ul.exploded li:hover span{
+		top: 1%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: 4%; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    	behavior: url(pie/PIE.htc);
+    }
 
-/* Formats text/fonts */
-p {
-	text-align: left;
-	font-size: 11pt;
-	font-family:Verdana, Arial, helvetica, san serif;
-	color: #000000;
-}
-.h1 {
-	text-align: left;
-	font-style: strong;
-	font-size: 18pt;
-	font-weight: 700;
-	text-decoration: underline;
-	letter-spacing: -2px;
-	color: #b40c00;
-}
-.h2 {
-	text-align: left;
-	font-size: 16pt;
-	font-weight: 600;
-	color: #b40c00;
-}
 
-.h3 {
-	text-align: left;
-	font-size: 12pt;
-	font-weight: 600;
-	color: #e86600;
-}
-.h4 {
-	font-size: 8pt;
-}
-.h5 {
-	text-align: left;
-	font-size: 14pt;
-	font-weight: 500;
-	color: #000000;
-}
-.c2 {
-	text-align: center;
-}
 
-p.questions {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: 800;
-	font-style: italic;
-	/*text-indent: 50px;*/
-}
-.faqquestions {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 15px;
-	font-weight: 800;
-	font-style: italic;
-	color: #e86600;
-}
-.statement {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 11pt;
-	font-weight: 500;
-	font-style: italic;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: justify;
-}
-.txtindent {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 11pt;
-	font-weight: 500;
-	padding-left: 20px;
-	text-align: justify;
-}
-p.cl {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 11pt;
-	font-weight: 500;
-	color: #e86600;
-}
-.clbold {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 11pt;
-	font-weight: 600;
-	color: #e86600;
-}
-.bo {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 11pt;
-	font-weight: 700;
-}
+/* >>>>>>>>>>> Process Page <<<<<<<<<<<<<< */
 
-/* Indents and justifies unordered-list for Value Statements */
 
-ul.our_processes {
-	font-size: 11pt;
-}
-
-ul.valu_ullist {
-	colour: red;
-	margin-left: 30px;
-	margin-bottom: 30px;
-	list-style-position: outside;
-	text-align: justify;
-}
-li.valu_lilist{
-    margin-top: 7px;
-	margin-right: 20px;
-	font-size: 14px;
-}
-
-/* Positions images - left & right justified - in main */
-.img_left {
-	float: left;
-	width: 32%;
-	height: auto;
+#slideshow1 {
 	margin-top: 10px;
-	margin-right: 10px;
-}
-.img_right {
-	float: right;
-	width: 32%;
+	width: 70%;
 	height: auto;
-	margin-left: 10px;
-}
-
-.img_popup {
-	width: 60%;
-	height: auto;
-}
-
-enlarge.popup_sm {
-	width: 60%;
-	height: auto;
-}
-
-
-#design_thumbs {
-	width: 482px;
-	height: auto;
-	margin-right: auto;
 	margin-left: auto;
-}
-
-#plan {
-	width: 45%;
-	float: left;
-	margin-right: 5px;
-	margin-top: -25px
-}
-
-#dimensions {
-	width: 40%;
-	font-size: 90%;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: 8%;
-	float:left;
-	/*float: right;*/
-}
-ul.dimentions {
-	list-style-type:none; /*remove the bullet point*/
-	margin-left:-20px;
-	text-align:left;
-	/*padding-left: 22px;
-	padding-right: 2px;*/
-    }
-
-#features {
-	width: 45%;
-	font-size: 90%;
-	padding-left: 10px;
-	float: left;
-	clear:both;
-}
-
-#inclusions {
-	width: 45%;
-	font-size: 90%;
-	padding-left: 10px;
-	float: right;
-}
-
-
-}
-
-
-
-@media (max-width: 480px){
+	margin-right: auto;
+	}
 	
-/* Positions images - left & right justified - in main */
-.img_left {
-	float: left;
-	width: 28%;
-	height: auto;
-	margin-top: 5px;
-	margin-right: 5px;
-}
-.img_right {
-	float: right;
-	width: 28%;
-	height: auto;
-	margin-left: 5px;
-}
-
-/* This CSS formats the marque title that moves left to right at top of every page. 
-.marquee_head {
-	width: 38em;
-	margin-top:10px;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
-	font-size: 10pt;
-	color: #b40c00;
-	text-align:left;
-	font-weight: bold;
-}
-*/
-
-.marquee {
-	height:20px;
-}
-/* Formats text/fonts */
-p {
-	text-align: left;
-	font-size: 10pt;
-	font-family:Verdana, Arial, helvetica, san serif;
-	color: #000000;
-}
-.h1 {
-	text-align: left;
-	font-style: strong;
-	font-size: 16pt;
-	font-weight: 800;
-	text-decoration: underline;
-	letter-spacing: -2px;
-	color: #b40c00;
-}
-.h2 {
-	text-align: left;
-	font-size: 14pt;
-	font-weight: 700;
-	color: #b40c00;
-}
-
-.h3 {
-	text-align: left;
-	font-size: 10pt;
-	font-weight: 600;
-	color: #e86600;
-}
-.h4 {
-	font-size: 7pt;
-}
-.h5 {
-	text-align: left;
-	font-size: 12pt;
-	font-weight: 500;
-	color: #000000;
-}
-.c2 {
-	text-align: center;
-}
-
-p.questions {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 13px;
-	font-weight: 700;
-	font-style: italic;
-	/*text-indent: 50px;*/
-}
-.faqquestions {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 13px;
-	font-weight: 700;
-	font-style: italic;
-	color: #e86600;
-}
-.statement {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: 400;
-	font-style: italic;
-	padding-left: 15px;
-	padding-right: 30px;
-	text-align: justify;
-}
-.txtindent {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: 400;
-	padding-left: 15px;
-	text-align: justify;
-}
-p.cl {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: 400;
-	color: #e86600;
-}
-.clbold {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: 500;
-	color: #e86600;
-}
-.bo {
-	font-family: Verdana, Arial, helvetica, sans-serif;
-	font-size: 10pt;
-	font-weight: 600;
-}
-
-/* Indents and justifies unordered-list for Value Statements */
-
-ul.our_processes {
-	font-size: 10pt;
-}
 
 
-ul.valu_ullist {
-	colour: red;
-	margin-left: 25px;
-	margin-bottom: 25px;
-	list-style-position: outside;
-	text-align: justify;
-}
-li.valu_lilist{
-    margin-top: 4px;
-	margin-right: 15px;
-	font-size: 12px;
-}
 
-#design_thumbs {
-	width: 340px;
-	height: auto;
-	margin-right: auto;
-	margin-left: auto;
-}
-#plan {
-	width: 75%;
-	height: auto;
-	/*float: left;*/
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -25px
-}
-/*
-#dimensions {
+/* >>>>>>>>>>>>>> Contact Page <<<<<<<<<<<<<<<<< */
+
+/* ================================================== 
+This section is for the contact details in the "contact" page   
+===================================================== */
+
+.cont_box {
 	width: 100%;
+	height: 240px;
+	margin: 0 0 -5% 1%;
+}
+.cont_icons {
+	width: 3%;
 	height: auto;
-	padding-left: 0px;
-	margin-left: 10px;
+	padding: 0 2%;
 	float: left;
-	clear: left;
-	font-size: 14px;
+	clear: both;
 }
-*/
-
-#dimensions {
-	width: 100%;
-	font-size: 90%;
-	padding-left: 10px;
-	padding-right: 10px;
-	float:left;
-	/*float: right;*/
-}
-ul.dimentions {
-	list-style-type:none; /*remove the bullet point*/
-	margin-left:-20px;
-	text-align:left;
-	/*padding-left: 22px;
-	padding-right: 2px;*/
-    }
-
-
-#features {
-	width: 100%;
+.cont_details {
+	width: 47%;
 	height: auto;
-	padding-left: 0px;
-	margin-left: 10px;
+	padding-left: 3%;
 	float: left;
-	clear:left;
-	font-size: 14px;
 }
-#inclusions {
-	width: 100%;
+.hours {
+	width: 38%;
 	height: auto;
-	padding-left: 0px;
-	margin-left: 10px;
+	padding-left:5%;
 	float: left;
-	clear:left;
-	font-size: 14px;
 }
 
 
+
+/* ====================================================
+ This section is for the social media bar/buttons in the "contact" page   
+ =================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+
+p > a:hover {
+  color: #d9d9d9;
+  text-decoration: underline;
 }
+
+
+._12 {
+  font-size: 1.2em;
+}
+
+._14 {
+  font-size: 1.4em;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.fr-social-icons {
+  width: 496px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:20px;
+  float:left;
+  margin: 0px 10px 10px 10px;
+  border: 3px #e86600;
+  border-top-style: none ;
+  border-right-style: solid;
+  border-bottom-style: none;
+  border-left-style: solid;
+  display: block;
+
+  background-color:#e9e5dc;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+
+li img{
+	width: 15%;
+	margin-left: 0.5%;
+}
+
+li img:hover{
+	box-shadow: 2px 2px 7px #b40c00;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 14px 7px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-twitter {
+  padding: 10px 10px 7px 10px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+  box-shadow: 2px 2px 2px red;
+}
+
+.fa-rss {
+  padding: 10px 12px 7px 12px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-rss:hover {
+  background-color: #eb8231;
+}
+
+.fa-youtube {
+  padding: 10px 12px 7px 11px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+
+.fa-linkedin {
+  padding: 10px 11px 8px 11px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+  box-shadow: 2px 2px 2px red;
+}
+
+.fa-google-plus {
+  padding: 10px 10px 7px 10px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #e9e5dc;
+}
+
+.fa-google-plus:hover {
+  background-color: #e25714;
+}
+
+
+
+/* ====================================================
+ This section formats the GoogleMap feature in the "contact" page   
+ =================================================== */
+.gmap {
+	border-style: solid;
+	border-width: 10px;
+	border-color: #000000;
+}
+

@@ -4,7 +4,6 @@
 #contact-form {
     background-color:#e9e5dc;
     width: 496px;
-
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom:20px;
@@ -193,7 +192,7 @@ input.placeholder-text, textarea.placeholder-text  {
 #gmap_canvas {
 	width: 496px;
 	height:300px;
-	padding:20px;
+	padding:0 20px 20px 20px;
 	float:left;
 	overflow:hidden;
 	border: 3px #e86600;
@@ -201,10 +200,11 @@ input.placeholder-text, textarea.placeholder-text  {
     border-right-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
-	margin-top: -5px;
 	margin-left: 10px;
+	margin-top: -40px;
 	-moz-border-radius:15px;
     -webkit-border-radius:15px;
+	border-radius:15px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-left-radius: 15px;
@@ -212,7 +212,7 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 
-/*  ***************************************************************** */
+/*  ***************************************************************** 
 
 
 
@@ -278,7 +278,7 @@ border-bottom:5px solid #3399FF;
 	font-size:15px;
 	line-height: 1.4;
 }
-
+*/
 
 @media (min-width: 481px) and (max-width: 801px){
 /*
@@ -372,7 +372,7 @@ border-bottom:5px solid #3399FF;
 */
 
 
-
+/*
 
 .slidingDiv {
 height:180px;
@@ -471,7 +471,7 @@ border-bottom:5px solid #3399FF;
 }
 /* ****************************************************************** */
 
-/* CSS for the GoogleMaps button */
+/* CSS for the GoogleMaps button 
 #gmap_canvas {
 	width: 92.6%;
 	height:300px;
@@ -494,7 +494,7 @@ border-bottom:5px solid #3399FF;
 /*  ***************************************************************** */
 
 
-
+/*
 .slidingDiv {
 height:180px;
 background-color: #99CCFF;
@@ -556,5 +556,5 @@ border-bottom:5px solid #3399FF;
 	font-size:14px;
 	line-height: 1.4;
 }
-
+*/
 }

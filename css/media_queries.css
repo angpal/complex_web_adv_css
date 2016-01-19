@@ -1,0 +1,1559 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (min-width: 481px) and (max-width: 801px){
+	
+/*  
+>>>>  TABLE OF CONTENT  <<<<
+
+1. General Layout
+2. General text/fonts and images
+3. Back-To-The-Top Button 
+4. Footer links
+5. Drop-Down Menu (Navigation Bar)
+6. Design Page 
+	6.1 ImageMap
+	6.2 Pop-up Thumb-nails
+	6.3 Individual house layout
+	6.4 "Exploded" views of architectural drawings
+7. Process Page
+	7.1 Slideshow
+	7.2 Tabbed textbox
+8 Contact Page
+	8.1 Contact details layout
+	8.2 GoogleMaps
+
+*/
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+This section configures the general layout of the majority of the pages 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#wrapper {
+	width:100%;
+	height: auto;
+	margin-top: 10px;
+	font-family: Verdana, Arial, helvetica;
+	background-color:#dfdfdf;
+	}
+
+#leftHeader {
+	width: 49.5%;
+	height: 140px;
+	float: left;
+	background-color: #f6f6f6;
+	margin-right: 0.4%;
+	margin-bottom: 2px;
+	padding: 0%;
+	background-image: url(../images/logo/logo_390x140.png);
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#rightHeader {
+	width: 38.45%;
+	height: 128px;
+	margin-left: 0.4%;
+	margin-bottom: 2px;
+	float: right;
+	background-color: #f6f6f6;
+	/*background-size: 395px 140px;*/
+	padding-top: 12px;
+	/*padding-bottom: 8px;*/
+	padding-left: 11.25%;
+}
+
+#main {
+	width: 100%;
+	height: auto;
+	background-color: #f6f6f6;
+	margin-top: 3px;
+	margin-bottom: 7px;
+	padding: 5px;
+	overflow-y: no-display;
+	overflow-x: no-display;
+}
+
+#sidebar {
+	display: none;
+	visibility: hidden;
+}
+
+#sidebar_process_page {
+	display: none;
+	visibility: hidden;
+}
+
+#footer {
+	width: 100%;
+	background-color: #f6f6f6;
+	font-size:10px;
+	margin-top: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+/* ==================================================
+This section configures all general texts/fonts and images thoughout the site
+=====================================================*/
+	
+p {
+	text-align: left;
+	font-size: 11pt;
+	font-family:Verdana, Arial, helvetica, san serif;
+	color: #000000;
+}
+.h1 {
+	text-align: left;
+	font-style: strong;
+	font-size: 18pt;
+	font-weight: 700;
+	text-decoration: underline;
+	letter-spacing: -2px;
+	color: #b40c00;
+}
+.h2 {
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 600;
+	color: #b40c00;
+}
+
+.h3 {
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.h4 {
+	font-size: 8pt;
+}
+.h5 {
+	text-align: left;
+	font-size: 14pt;
+	font-weight: 500;
+	color: #000000;
+}
+.c2 {
+	text-align: center;
+}
+
+p.questions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+	font-style: italic;
+	/*text-indent: 50px;*/
+}
+.faqquestions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+	font-style: italic;
+	color: #e86600;
+}
+.statement {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	font-style: italic;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+.txtindent {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	padding-left: 20px;
+	text-align: justify;
+}
+p.cl {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 500;
+	color: #e86600;
+}
+.clbold {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.bo {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 700;
+}
+
+/* Indents and justifies unordered-list for Value Statements */
+
+ul.our_processes {
+	font-size: 11pt;
+}
+
+ul.valu_ullist {
+	colour: red;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	list-style-position: outside;
+	text-align: justify;
+}
+li.valu_lilist{
+    margin-top: 7px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+/* Positions images - left & right justified - in main */
+.img_left {
+	float: left;
+	width: 32%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.img_right {
+	float: right;
+	width: 32%;
+	height: auto;
+	margin-left: 10px;
+}
+
+
+
+/* ==============================================
+This section configures the Back-To-The-Top Button ================================================ */
+
+
+
+
+
+/* ==============================================
+This section configures the links in the footer ================================================ */
+	
+	
+	
+	
+	/* ==============================================
+ This section is for the Drop-Down Menu (Navigation Bar) in all page   ====================================================  */
+ 
+ #ddmenu li div.column.mayHide {
+        display: none;
+    }
+
+    /*override the original settings*/
+    #ddmenu ul {
+        width: 250px;
+		float: left;
+        display: none;
+        border-radius: 0;
+		position:absolute;
+    }
+
+    #ddmenu li {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    #ddmenu li.full-width {
+        position: relative;
+    }
+
+    #ddmenu li .dropdown {
+		position: relative;
+        *top: auto; /*for IE7*/
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        text-align: left;
+        background-color: #FFF;
+    }
+
+    #ddmenu .offset300 {
+        left: 0;
+    }
+
+    #ddmenu li.full-width div.dropdown {
+        width: auto;
+    }
+
+    #ddmenu .dd-inner {
+        margin:0;
+        background:none;
+        text-align:left;
+    }
+
+    /*turn each column to list vertically instead of horizontally */
+    #ddmenu li div.column {
+        width:auto;
+        padding:0;
+        border:none;
+        display:block;
+    }
+
+    /*move the arrow icon to right*/
+    #ddmenu i.caret {
+        position:absolute;
+        left:auto;
+        right:14px;
+        top: 22px;
+        border-width:5px;
+    }
+
+
+
+/* All the following are for the div.menu-icon (pure CSS) */
+    #ddmenu div.menu-icon {
+        font-size: 32px; /*icon size*/
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        background-color: #EEE;
+        border-radius: 3px;
+        margin-bottom:6px;	
+        /*align the icon to the left*/
+        margin-left: 12px;
+        margin-right: auto;
+    }
+
+    #ddmenu div.menu-icon::before {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 4px;
+        width: 1em;
+        height: 0.125em;
+        border-top: 0.375em double #b40c00;
+        border-bottom: 0.125em solid #b40c00;
+        box-sizing: content-box;
+    }
+
+    #ddmenu div.menu-icon-active {
+        background-color: #b40c00;
+    }
+
+    #ddmenu div.menu-icon-active::before {
+        border-color: #e86600;
+    }
+
+
+
+/* >>>>>>>>>>> Design Page <<<<<<<<<<<<<< */
+
+
+/* ==============================================
+ This section is for the ImageMap in the "designs" page   ====================================================  */
+
+.main-content-area{
+background-color:#F6F6F6;
+min-height: 200px;
+width:96%;
+margin: 0 2% 1% 2%;
+position: relative;
+}
+ 
+.main-content-area img{
+width: 100%;
+height: auto;
+}
+
+img.shed {
+position: relative;
+}
+
+
+i.inclusions_tank{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 50%;
+left: 64%;
+cursor: pointer;
+}
+
+i.inclusions_tank p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.inclusions_tank:hover p{
+opacity: 1;
+top: -50px;
+left:-45px;
+}
+
+
+
+i.landscaping{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 78%;
+left: 8%;
+cursor: pointer;
+}
+
+i.landscaping p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 280%;
+padding: 8px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.landscaping:hover p{
+opacity: 1;
+top: -72px;
+left:-42px;
+z-index: 5;
+}
+
+
+
+i.products_fridge{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 67%;
+left: 36%;
+cursor: pointer;
+}
+
+i.products_fridge p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.products_fridge:hover p{
+opacity: 1;
+top: -56px;
+left:-30px;
+}
+
+
+
+i.fixtures_door{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 61%;
+left: 24%;
+cursor: pointer;
+}
+
+i.fixtures_door p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.fixtures_door:hover p{
+opacity: 1;
+top: -98px;
+left:-45px;
+}
+
+
+
+i.features_fireplace{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 40%;
+left: 87%;
+cursor: pointer;
+}
+
+i.features_fireplace p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.features_fireplace:hover p{
+opacity: 1;
+top: -50px;
+left:-65px;
+}
+
+ 
+/* ====================================================
+ This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
+ =================================================== */
+
+#design_thumbs {
+	width: 95%;
+	/*height: auto;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+	ul.enlarge{
+		list-style-type:none; /*remove the bullet point*/
+		margin-left: 1%;
+    }
+    ul.enlarge li{
+		display:inline-block; /*places the images in a line*/
+		font-size: 11px;
+		text-align: center;
+		position: relative;
+		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
+
+    }
+    ul.enlarge img{
+		background-color:#eae9d4;
+		padding: 6px;
+		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
+	
+	ul.enlarge img.sm {
+		display:inline-block;
+		width: 110px;
+		height: auto;
+	}
+	ul.enlarge img.lg {
+		display:inline-block;
+		width: 400px;
+		height: auto;
+	}
+	
+    ul.enlarge span{
+		position:absolute;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
+    ul.enlarge li:hover{
+		z-index: 50;
+		cursor:pointer;
+    }
+    ul.enlarge span img{
+		padding:2px;
+		background:#ccc;
+    }
+    ul.enlarge li:hover span{
+		top: -198px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -25px; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    ul.enlarge li:hover:nth-child(2) span{
+    	left: -165px;
+    }
+    ul.enlarge li:hover:nth-child(3) span{
+    	left: -303px;
+    }
+    ul.enlarge li:hover:nth-child(4) span{
+		top: -314px;
+    	left: -25px;
+    }
+    ul.enlarge li:hover:nth-child(5) span{
+		top: -314px;
+    	left: -165px;
+    }
+	ul.enlarge li:hover:nth-child(6) span{
+		top: -314px;
+    	left: -303px;
+    }
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    	behavior: url(pie/PIE.htc);
+    }
+
+
+/* ==============================================
+This section configures the various divs on the individual house design pages ================================================ */
+
+.img_popup {
+	width: 60%;
+	height: auto;
+}
+
+enlarge.popup_sm {
+	width: 60%;
+	height: auto;
+}
+
+
+#design_thumbs {
+	width: 482px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#plan {
+	width: 45%;
+	float: left;
+	margin-right: 5px;
+	margin-top: -25px
+}
+
+#dimensions {
+	width: 40%;
+	font-size: 90%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 8%;
+	float:left;
+	/*float: right;*/
+}
+ul.dimentions {
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:-20px;
+	text-align:left;
+	/*padding-left: 22px;
+	padding-right: 2px;*/
+    }
+
+#features {
+	width: 45%;
+	font-size: 90%;
+	padding-left: 10px;
+	float: left;
+	clear:both;
+}
+
+#inclusions {
+	width: 45%;
+	font-size: 90%;
+	padding-left: 10px;
+	float: right;
+}
+
+
+
+
+/* ===================================================
+The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
+====================================================== */
+
+ul.exploded{
+		list-style-type:none; /*remove the bullet point*/
+		margin-left:0;
+    }
+    ul.exploded li{
+		display:inline-block; /*places the images in a line*/
+		font-size: 11px;
+		text-align: center;
+		position: relative;
+		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    	margin:20px 25px 2px -25px; /*margin:10px 40px 0 20px;*/
+    }
+    ul.exploded img{
+		background-color:#eae9d4;
+		padding: 6px;
+		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
+	
+	ul.exploded img.sm {
+		display:inline-block;
+		width: 131px;
+		height: auto;
+	}
+	ul.exploded img.lg {
+		display:inline-block;
+		width: 520px;
+		height: auto;
+	}
+	
+    ul.exploded span{
+		position:absolute;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
+    ul.exploded li:hover{
+		z-index: 50;
+		cursor:pointer;
+    }
+    ul.exploded span img{
+		padding:2px;
+		background:#ccc;
+    }
+    ul.exploded li:hover span{
+		top: -250px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -4px; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    	behavior: url(pie/PIE.htc);
+    }
+
+
+/* >>>>>>>>>>> Process Page <<<<<<<<<<<<<< */
+
+
+/* ===================================================
+The following section is applied to the Slideshow on the Process page 
+====================================================== */
+
+
+
+
+/* >>>>>>>>>>>>>> Contact Page <<<<<<<<<<<<<<<<< */
+
+/* ================================================== 
+This section is for the contact details in the "contact" page   
+===================================================== */
+
+
+
+
+/* ====================================================
+ This section is for the social media bar/buttons in the "contact" page   
+ =================================================== */
+ 
+ /* ====================================================
+ This section formats the GoogleMap feature in the "contact" page   
+ =================================================== */
+ 
+ 
+ 
+}
+
+
+
+
+
+
+
+@media (max-width: 480px){
+	
+/*  
+>>>>  TABLE OF CONTENT  <<<<
+
+1. General Layout
+2. General text/fonts and images
+3. Back-To-The-Top Button 
+4. Footer links
+5. Drop-Down Menu (Navigation Bar)
+6. Design Page 
+	6.1 ImageMap
+	6.2 Pop-up Thumb-nails
+	6.3 Individual house layout
+	6.4 "Exploded" views of architectural drawings
+7. Process Page
+	7.1 Slideshow
+	7.2 Tabbed textbox
+8 Contact Page
+	8.1 Contact details layout
+	8.2 GoogleMaps
+
+*/
+	
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+This section configures the general layout of the majority of the pages 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#wrapper {
+	width: 100%;
+	margin-top: 10px;
+	height: auto;
+	font-family: Verdana, Arial, helvetica;
+	background-color:#dfdfdf;
+	}
+
+
+#leftHeader {
+	width: 100%;
+	background-color: #f6f6f6;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	background-image: url(../images/logo/logo_mobile.png);
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rightHeader {
+	display: none;
+	visibility: hidden;
+}
+
+/*
+#navigation {
+		display: none;
+	visibility: hidden;
+}
+*/
+
+#main {
+	width: 100%;
+	height: auto;
+	background-color: #f6f6f6;
+	margin-top: 5px;
+	margin-bottom: 7px;
+	padding: 5px;
+	overflow-y: no-display;
+	overflow-x: no-display;
+}
+
+#soc_media {
+	width: 95%;
+	height: auto;
+	border: 1px red solid;
+}
+
+#sidebar {
+	display: none;
+	visibility:hidden;
+}
+
+#sidebar_process_page {
+	display: none;
+	visibility: hidden;
+}
+	
+#footer {
+	width: 100%;
+	clear: both;
+	background-color: #f6f6f6;
+	font-size:10px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+	
+
+/* ==================================================
+This section configures all general texts/fonts and images thoughout the site
+=====================================================*/
+
+/* Positions images - left & right justified - in main */
+.img_left {
+	float: left;
+	width: 28%;
+	height: auto;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.img_right {
+	float: right;
+	width: 28%;
+	height: auto;
+	margin-left: 5px;
+}
+
+.marquee {
+	height:20px;
+}
+/* Formats text/fonts */
+p {
+	text-align: left;
+	font-size: 10pt;
+	font-family:Verdana, Arial, helvetica, san serif;
+	color: #000000;
+}
+.h1 {
+	text-align: left;
+	font-style: strong;
+	font-size: 16pt;
+	font-weight: 800;
+	text-decoration: underline;
+	letter-spacing: -2px;
+	color: #b40c00;
+}
+.h2 {
+	text-align: left;
+	font-size: 14pt;
+	font-weight: 700;
+	color: #b40c00;
+}
+
+.h3 {
+	text-align: left;
+	font-size: 10pt;
+	font-weight: 600;
+	color: #e86600;
+}
+.h4 {
+	font-size: 7pt;
+}
+.h5 {
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 500;
+	color: #000000;
+}
+.c2 {
+	text-align: center;
+}
+
+p.questions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	font-style: italic;
+	/*text-indent: 50px;*/
+}
+.faqquestions {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	font-style: italic;
+	color: #e86600;
+}
+.statement {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	font-style: italic;
+	padding-left: 15px;
+	padding-right: 30px;
+	text-align: justify;
+}
+.txtindent {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	padding-left: 15px;
+	text-align: justify;
+}
+p.cl {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 400;
+	color: #e86600;
+}
+.clbold {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 500;
+	color: #e86600;
+}
+.bo {
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: 600;
+}
+
+/* Indents and justifies unordered-list for Value Statements */
+
+ul.our_processes {
+	font-size: 10pt;
+}
+
+
+ul.valu_ullist {
+	colour: red;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	list-style-position: outside;
+	text-align: justify;
+}
+li.valu_lilist{
+    margin-top: 4px;
+	margin-right: 15px;
+	font-size: 12px;
+}
+
+
+
+/* ==============================================
+This section configures the Back-To-The-Top Button ================================================ */
+
+
+
+
+/* ==============================================
+ This section is for the Drop-Down Menu (Navigation Bar) in all page   ====================================================  */
+ 
+     #ddmenu li div.column.mayHide {
+        display: none;
+    }
+
+    /*override the original settings*/
+    #ddmenu ul {
+        width: 250px;
+        display: none;
+        border-radius: 0;
+		position:absolute;
+    }
+
+    #ddmenu li {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    #ddmenu li.full-width {
+        position: relative;
+    }
+
+    #ddmenu li .dropdown {
+        position: relative;
+        *top: auto; /*for IE7*/
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        text-align: left;
+        background-color: #FFF;
+    }
+
+    #ddmenu .offset300 {
+        left: 0;
+    }
+
+    #ddmenu li.full-width div.dropdown {
+        width: auto;
+    }
+
+    #ddmenu .dd-inner {
+        margin:0;
+        background:none;
+        text-align:left;
+    }
+
+    /*turn each column to list vertically instead of horizontally */
+    #ddmenu li div.column {
+        width:auto;
+        padding:0;
+        border:none;
+        display:block;
+    }
+
+    /*move the arrow icon to right*/
+    #ddmenu i.caret {
+        position:absolute;
+        left:auto;
+        right:14px;
+        top: 22px;
+        border-width:5px;
+    }
+
+
+    /* All the following are for the div.menu-icon (pure CSS) */
+    #ddmenu div.menu-icon {
+        font-size: 32px; /*icon size*/
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        background-color: #EEE;
+        border-radius: 3px;
+
+        margin-bottom:6px;	
+        /*align the icon to the left*/
+        margin-left: 12px;
+        margin-right: auto;
+    }
+
+    #ddmenu div.menu-icon::before {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 4px;
+        width: 1em;
+        height: 0.125em;
+        border-top: 0.375em double #b40c00;
+        border-bottom: 0.125em solid #b40c00;
+        box-sizing: content-box;
+    }
+
+    #ddmenu div.menu-icon-active {
+        background-color: #b40c00;
+    }
+
+    #ddmenu div.menu-icon-active::before {
+        border-color: #e86600;
+    }
+
+/* >>>>>>>>>>> Design Page <<<<<<<<<<<<<< */
+
+ /* ==============================================
+ This section is for the ImageMap in the "designs" page   ====================================================  */
+ 
+ .main-content-area img{
+width: 100%;
+height: auto;
+}
+
+img.shed {
+position: relative;
+}
+
+
+i.inclusions_tank{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 50%;
+left: 64%;
+cursor: pointer;
+}
+
+i.inclusions_tank p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.inclusions_tank:hover p{
+opacity: 1;
+top: -50px;
+left:-45px;
+}
+
+
+
+i.landscaping{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 78%;
+left: 8%;
+cursor: pointer;
+}
+
+i.landscaping p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 280%;
+padding: 8px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.landscaping:hover p{
+opacity: 1;
+top: -72px;
+left:-42px;
+z-index: 5;
+}
+
+
+
+i.products_fridge{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 67%;
+left: 36%;
+cursor: pointer;
+}
+
+i.products_fridge p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.products_fridge:hover p{
+opacity: 1;
+top: -56px;
+left:-30px;
+}
+
+
+
+i.fixtures_door{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 61%;
+left: 24%;
+cursor: pointer;
+}
+
+i.fixtures_door p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.fixtures_door:hover p{
+opacity: 1;
+top: -98px;
+left:-45px;
+}
+
+
+
+i.features_fireplace{
+color: yellow;
+font-size: 40px;
+position: absolute;
+top: 40%;
+left: 87%;
+cursor: pointer;
+}
+
+i.features_fireplace p{
+font-size: 12pt;
+background-color:#F6F6F6;
+color: black;
+border-radius: 10px;
+border: 2px #b40c00 solid;
+opacity: 0;
+position: absolute;
+top: -15px;
+left: -1000px;
+width: 250%;
+padding: 12px;
+transition: opacity 1s linear, left 1s linear;
+}
+
+i.features_fireplace:hover p{
+opacity: 1;
+top: -50px;
+left:-65px;
+}
+
+ 
+ 
+ 
+/* ====================================================
+ This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
+ =================================================== */
+
+#design_thumbs {
+	width: 65%;
+	/*height: auto;*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+ul.enlarge{
+	list-style-type:none; /*remove the bullet point*/
+	margin-left: 0;
+	width: 95%;
+}
+ul.enlarge li{
+	display:inline-block; /*places the images in a line*/
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
+
+}	
+
+ul.enlarge img.sm {
+		display:inline-block;
+		width: 100px;
+		height: auto;
+}
+ul.enlarge img.lg {
+	display:inline-block;
+	width: 250px;
+	height: auto;
+}
+
+ul.enlarge li:hover span{
+		top: -148px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -28px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+
+ul.enlarge li:hover:nth-child(2) span{
+	left: -153px;
+}
+ul.enlarge li:hover:nth-child(3) span{
+	top: -255px;
+	left: -28px;
+}
+ul.enlarge li:hover:nth-child(4) span{
+	top: -255px;
+	left: -153px;
+}
+ul.enlarge li:hover:nth-child(5) span{
+	top: -363px;
+	left: -28px;
+}
+ul.enlarge li:hover:nth-child(6) span{
+	top: -363px;
+	left: -153px;
+}
+/**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+ul.enlarge img, ul.enlarge span{
+	behavior: url(pie/PIE.htc);
+}
+
+/* ==============================================
+This section configures the various divs on the individual house design pages ================================================ */
+
+#design_thumbs {
+	width: 340px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+#plan {
+	width: 75%;
+	height: auto;
+	/*float: left;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -25px
+}
+
+#dimensions {
+	width: 100%;
+	font-size: 90%;
+	padding-left: 10px;
+	padding-right: 10px;
+	float:left;
+	/*float: right;*/
+}
+ul.dimentions {
+	list-style-type:none; /*remove the bullet point*/
+	margin-left:-20px;
+	text-align:left;
+	/*padding-left: 22px;
+	padding-right: 2px;*/
+    }
+
+
+#features {
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	clear:left;
+	font-size: 14px;
+}
+#inclusions {
+	width: 100%;
+	height: auto;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	clear:left;
+	font-size: 14px;
+}
+
+
+/* ===================================================
+The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
+====================================================== */
+
+ul.exploded{
+		list-style-type:none; /*remove the bullet point*/
+		margin-left:0;
+    }
+    ul.exploded li{
+		display:inline-block; /*places the images in a line*/
+		font-size: 11px;
+		text-align: center;
+		position: relative;
+		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    	margin:20px 25px 2px -25px; /*margin:10px 40px 0 20px;*/
+    }
+    ul.exploded img{
+		background-color:#eae9d4;
+		padding: 6px;
+		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
+	
+	ul.exploded img.sm {
+		display:inline-block;
+		width: 131px;
+		height: auto;
+	}
+	ul.exploded img.lg {
+		display:inline-block;
+		width: 380px;
+		height: auto;
+	}
+	
+    ul.exploded span{
+		position:absolute;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
+    ul.exploded li:hover{
+		z-index: 50;
+		cursor:pointer;
+    }
+    ul.exploded span img{
+		padding:2px;
+		background:#ccc;
+    }
+    ul.exploded li:hover span{
+		top: -250px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -4px; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    	behavior: url(pie/PIE.htc);
+    }
+
+
+/* >>>>>>>>>>> Process Page <<<<<<<<<<<<<< */
+
+
+/* ===================================================
+The following section is applied to the Slideshow on the Process page 
+====================================================== */
+
+
+
+
+/* >>>>>>>>>>>>>> Contact Page <<<<<<<<<<<<<<<<< */
+
+/* ================================================== 
+This section is for the contact details in the "contact" page   
+===================================================== */
+
+
+
+
+/* ====================================================
+ This section is for the social media bar/buttons in the "contact" page   
+ =================================================== */
+ 
+ /* ====================================================
+ This section formats the GoogleMap feature in the "contact" page   
+ =================================================== */
+ 
+ 
+ 
+
+}
+	
