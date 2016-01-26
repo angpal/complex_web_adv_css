@@ -187,7 +187,7 @@ pre {
 	align-items:center;
 }
 #tabs li {
-	margin-left: 2%;
+	margin-left: 1.5%;
 	list-style: none;
 	display:inline-block;
 	border-style: solid;
@@ -325,13 +325,13 @@ pre {
 	border-top:solid;
 	border-width: 3px;
 	border-color: #000;
-	font-size: 9pt;
+	font-size: 12pt;
 
 }
 #tabs ul {
-	float: left;
+
 	background: #e9e5dc;
-	width: 98%;
+	width: 90%;
 	padding-top: 4px;
 	text-align:center;
 	list-style-type: none;
@@ -350,8 +350,8 @@ pre {
 	display: inline;
 }
 #tabs li, #tabs li a {
-	float: left;
-	
+	width: 12.0%;
+	font-size:10px;	
 }
 #tabs ul li.active {
 	height: 26%;
@@ -395,8 +395,7 @@ pre {
 	padding: 5px;
 	color: #000;
 	font-weight: bold;
-	font-size: 75%;
-
+	font-size: 78%;
 }
 /*
 .thumbs {
@@ -420,7 +419,7 @@ pre {
 	width: 100%;
 	height: auto;
 	min-height: 8%;
-	padding-left: 1%;
+	padding-left: 5%;
 	padding-right: 1%;
 	-moz-border-radius:7px;
     -webkit-border-radius:7px;
@@ -433,7 +432,7 @@ pre {
 	width: 100%;
 	height: auto;
 	min-height: 8%;
-	padding-left: 1%;
+	padding-left: 5%;
 	padding-right: 1%;
 }
 

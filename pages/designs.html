@@ -3,25 +3,18 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 	<title>AllStyles Homes</title>
-
-	<link href="../css/mystyles.css" rel="stylesheet" type="text/css">
+    
 	<link href="../css/allstylehomes.css" rel="stylesheet" type="text/css">
-
-	<!-- Following line, links to CSS enlarged pop-up image on hover -->
-    <link href="../css/deisign_popups.css" rel="stylesheet" type="text/css">
-
-    <!-- Following two lines, link to CSS & JS for Responsive Drop-Down Navigation -->
-    <link href="../css/ddmenu.css" rel="stylesheet" type="text/css" />
+	<link href="../css/media_queries.css" rel="stylesheet" type="text/css">
     
-    <script src="../js/ddmenu.js" type="text/javascript"></script>
-    
-    
-    <!-- CSS link for the Image Map on this page -->
-    <link href="../css/ash_imagemap.css" rel="stylesheet" type="text/css">
+    <!-- The following, links to CSS located online, for icons/images on this page -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+   <!-- The following, links to JS, to modify scripts --> 
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
-
 
 <body>
 <div id="wrapper">
@@ -45,9 +38,8 @@
     <ul>
         <li><a href="../index.html" class="top-heading" >Home</a></li>
         <li><a href="about.html" class="top-heading" >About</a></li>
-        <li><a href="designs.html" class="top-heading" >Designs</a>
-			<i class="caret"></i>           
-            <div class="dropdown mayRight">
+        <li><a href="designs.html" class="top-heading">Designs</a> <em class="caret"></em>
+          <div class="dropdown mayRight">
                 <div class="dd-inner">
                     <div class="column">
                         <h3>Designs</h3>
@@ -68,43 +60,38 @@
      </ul>
 </nav>
   
+  
+
+  
+  
   <div id="main">
+    
+	<marquee behavior="slide" direction="left"><span class="h1">Welcome to AllStyle Homes</span></marquee>
+    
+  
+  	<br><br>
+    
   	
-    <!--
-    <span class="h1">Design</span>
-    -->
-    
-    <marquee behavior="slide" direction="left"><span class="h1">Designs Unique to AllStyle Homes</span></marquee>
-    
-    
-    <ul id="map">
-	<li><a class="q_products" href="#" title="Quality Products"><span><b>Quality Products</b><br>We use only the highest quality Australian building products.</span></a></li>
-
-	<li><a class="our_features" href="#" title="Additional Features"><span><b>Additional Features</b><br>A wide range of additional features are available including a cosy fireplace.</span></a></li>
-	
-    <li><a class="landscaping" href="#" title="Landscaping"><span><strong>Landscaping</strong><br>	  Landscaping to all outside areas, is just part of our Standard Package.</span></a></li>
-	
-    <li><a class="landscaping2" href="#" title="Landscaping"><span><b>Landscaping</b><br>
-		Landscaping to all outside areas, is just part of our Standard Package.</span></a></li>
-		
-	<li><a class="fixtures" href="#" title="Quality Fitting and Fixture"><span><b>Quality Fitting and Fixture</b><br>Quality fitting and fixture throughout are standard features in all our homes.
-		</span></a></li>
-		
-    <li><a class="inclusions1" href="#" title="Standard Inclusions"><span><b>Standard Inclusions</b><br>A quality water tank is just one of our many standard inclusions.</span></a></li>
+ 	<section class="main-content-area">
+      <img src="../images/designs/allstyle_imagemap.jpg" class="shed">
+      	<i class="fa fa-bullseye inclusions_tank"><p><b>Standard Inclusions</b><br>A quality water tank is just one of our many standard inclusions.</p></i>
+          
+		<i class="fa fa-bullseye landscaping"><p><strong>Landscaping</strong><br>Landscaping to all outside areas, is just part of our Standard Package.</p></i>
         
-	<li><a class="inclusions2" href="#" title="Standard Inclusions"><span><b>Standard Inclusions</b><br>A quality water tank is just one of our many standard inclusions.</span></a></li>
-</ul>
-    
-<!--    
-    <br>
-				
- 	<img src="../images/spacer1.png" alt="Text divider to separate paragrapghs." class="textspacer1"/>
-    -->  
-   <p class="statement">Please look over our extensive range of designs in our collection. Click on the image to see more details, including a floor plan of the house.  Please keep in mind that these plans can be altered to accommodate your needs and desires.</p>
-    
-
+        <i class="fa fa-bullseye products_fridge"><p><b>Quality Products</b><br>We use only the highest quality Australian building products.</p></i>
+        
+        <i class="fa fa-bullseye fixtures_door"><p><b>Quality Fittings & Fixtures</b><br>We install quality fittings and fixtures as standard throughout all our homes.</p></i>
+        
+        <i class="fa fa-bullseye features_fireplace"><p><b>Additional Features</b><br>A wide range of additional features are available including a cosy fireplace.</p></i>
+        
+ 	</section>	<!-- Closes [section class="main-content-area"] -->
  
- 	<div id="design_thumbs">
+ <p class="statement">Please look over our extensive range of designs in our collection. Click on the image to see more details, including a floor plan of the house.  Please keep in mind that these plans can be altered to accommodate your needs and desires.</p>
+ 
+ 
+ 
+ 
+ <div id="design_thumbs">
  	<ul class="enlarge">
     
     	<li><a href="barclay.html"><img src="../images/designs/barclay_sm.png" class="sm" alt="jannsen_sm" /><br /><span><img src="../images/designs/barclay_lg.jpg" class="lg" alt="barclay_lg.jpg" /><br />The Barclay</span></a></li>
@@ -122,34 +109,17 @@
  
  </div>		<!-- Closes the "design_thumbs" DIV -->
  
- 
- 
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="../js/jquery.rwdImageMaps.min.js"></script>
-<script>
-$(document).ready(function(e) {
-	$('img[usemap]').rwdImageMaps();
-	
-	$('area').on('click', function() {
-		alert($(this).attr('alt') + ' clicked');
-	});
-});
-</script>
- 
- 
- 
- 
- 
- </div>		<!-- Closes the "main" DIV -->
+  </div>	<!-- Closes [div id="main"] -->
   
-  
-  
-  
-  
+
+
+
+
+
   <div id="sidebar">
   
   <h4 class="c2">We appreciate the support of:  </h4>
-  	
+
     <a href="http://www.timstewartarchitects.com.au/" target="_blank"><img src="../images/logo/tim_stewart_architect_logo.png" alt="Tim Stewart Architects logo" class="center"/>
     </a>
     
@@ -196,20 +166,16 @@ $(document).ready(function(e) {
     <a href="https://www.cbussuper.com.au" target="_blank"><img src="../images/logo/cbus_ais_logo.png" alt="cbus – an industry superfund logo" class="center"/>
     </a>
     
-  </div>
-  
+  </div>	<!-- Closes the "sidebar" DIV -->
+
   
   <div id="footer">
   		<a href="../documents/terms_and_conditions.pdf" target="_blank" class="class2">Terms and Conditions</a> |
         <a href="../documents/privacy_statement.pdf" target="_blank" class="class2">Privacy Statement</a> |
 		<a href="sitemap.html" class="class2">Sitemap</a> |
         &copy; 2015 AllStyle Homes
-  </div>
+  </div>	<!-- Closes the "footer" DIV -->
   
-</div>
-
-
-
-
+</div><!-- Closes the "wrapper" DIV -->
 </body>
 </html>
