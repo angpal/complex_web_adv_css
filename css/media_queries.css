@@ -46,7 +46,7 @@ This section configures the general layout of the majority of the pages
 #leftHeader {
 
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -70,7 +70,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerTab{
 	display: block;
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -89,7 +89,7 @@ This section configures the general layout of the majority of the pages
 }
 #rightHeader {
 	width: 38.45%;
-	height: 128px;
+	height: 108px;
 	margin-left: 0.4%;
 	margin-bottom: 2px;
 	float: right;
@@ -339,9 +339,10 @@ This section configures the links in the footer ================================
 /* ==============================================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
-	width: 100%;
+	width: 90%;
 	height: 50px;
-	margin: 25px auto;
+	margin: 5px 5%;
+
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
@@ -359,19 +360,43 @@ This section configures the links in the footer ================================
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
 
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
+	
+	line-height: 50px;
+
+
+	text-align: left;
+	font-style: strong;
+	font-size: 22px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	
 	line-height: 50px;
 
 
 	text-align: right;
 	font-style: strong;
-	font-size: 20pt;
+	font-size: 18px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1484,7 +1509,7 @@ This section configures the general layout of the majority of the pages
 
 
 #leftHeader {
-
+	height: 100px;
 	width: 100%;
 	background-color: #f6f6f6;
 	margin-right: 5px;
@@ -1518,7 +1543,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerMobile{
 	display: block;
 	width: 100%;
-	height: 140px;
+	height: 100px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -1541,8 +1566,8 @@ This section configures the general layout of the majority of the pages
 	width: 100%;
 	height: auto;
 	background-color: #f6f6f6;
-	margin-top: 5px;
-	margin-bottom: 7px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 5px;
 	overflow-y: no-display;
 	overflow-x: no-display;
@@ -1781,9 +1806,9 @@ This section configures the Back-To-The-Top Button =============================
 /* ==============================================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
-	width: 100%;
+	width: 96%;
 	height: 50px;
-	margin: 25px auto;
+	margin: 2px 2%;
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
@@ -1801,19 +1826,20 @@ This section configures the Back-To-The-Top Button =============================
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
 
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
+	
 	line-height: 50px;
 
 
 	text-align: left;
 	font-style: strong;
-	font-size: 11.8pt;
+	font-size: 22px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1822,6 +1848,30 @@ This section configures the Back-To-The-Top Button =============================
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
 }
+
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	
+	line-height: 50px;
+
+
+	text-align: right;
+	font-style: strong;
+	font-size: 14px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+
 
 .marquee p:nth-child(1) {
 	animation: left-one 15s ease infinite;
