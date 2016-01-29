@@ -340,9 +340,16 @@ This section configures the links in the footer ================================
 /* ==============================================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
+<<<<<<< HEAD
 	width: 96%;
 	height: 100px;
 	margin: 5px 2%;
+=======
+	width: 90%;
+	height: 50px;
+	margin: 5px 5%;
+
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
@@ -361,6 +368,30 @@ This section configures the links in the footer ================================
 	height: 100%;
 
 	margin: 0;
+	
+	line-height: 50px;
+
+
+	text-align: left;
+	font-style: strong;
+	font-size: 22px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	
 	line-height: 50px;
 
 	text-align: left;
@@ -388,7 +419,11 @@ This section configures the links in the footer ================================
 
 	text-align: right;
 	font-style: strong;
+<<<<<<< HEAD
 	font-size: 22px;
+=======
+	font-size: 18px;
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1772,8 +1807,13 @@ This section configures the Back-To-The-Top Button =============================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
 	width: 96%;
+<<<<<<< HEAD
 	height: 100px;
 	margin: 5px 2%;
+=======
+	height: 50px;
+	margin: 2px 2%;
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
@@ -1792,11 +1832,16 @@ This section configures the Back-To-The-Top Button =============================
 	height: 100%;
 
 	margin: 0;
+	
 	line-height: 50px;
 
 	text-align: left;
 	font-style: strong;
+<<<<<<< HEAD
 	font-size: 20px;
+=======
+	font-size: 22px;
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1804,8 +1849,11 @@ This section configures the Back-To-The-Top Button =============================
 	transform:translateX(100%);
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
+<<<<<<< HEAD
 	-webkit-transition: width 2s, height 2s, -webkit-transform 4s; /* Safari */
     transition: transform 4s;
+=======
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 }
 
 .marquee p.sm_marquee {
@@ -1815,11 +1863,21 @@ This section configures the Back-To-The-Top Button =============================
 	height: 100%;
 
 	margin: 0;
+<<<<<<< HEAD
 	line-height: 100px;
 
 	text-align: right;
 	font-style: strong;
 	font-size: 16px;
+=======
+	
+	line-height: 50px;
+
+
+	text-align: right;
+	font-style: strong;
+	font-size: 14px;
+>>>>>>> 3a7f14e54d58019eb22ccbc5a128d001961f54c4
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1838,6 +1896,7 @@ This section configures the Back-To-The-Top Button =============================
 	-moz-animation: left-two 8s ease 1;
 	-webkit-animation: left-two 8s ease 1;
 }
+
 
 .marquee p:nth-child(1) {
 	-ms-transform: translate(0); /* IE 9 */
