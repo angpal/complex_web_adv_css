@@ -46,7 +46,7 @@ This section configures the general layout of the majority of the pages
 #leftHeader {
 
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -70,7 +70,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerTab{
 	display: block;
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -89,7 +89,7 @@ This section configures the general layout of the majority of the pages
 }
 #rightHeader {
 	width: 38.45%;
-	height: 128px;
+	height: 108px;
 	margin-left: 0.4%;
 	margin-bottom: 2px;
 	float: right;
@@ -336,42 +336,59 @@ This section configures the links in the footer ================================
   }
 
 
+
 /* ==============================================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
-	width: 100%;
-	height: 50px;
-	margin: 25px auto;
+	width: 96%;
+	height: 100px;
+	margin: 5px 2%;
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
-
 	background-color: green;
-
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-    box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);*/
-
+  	*/
+    text-shadow: 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
 	-webkit-transition: background-color 350ms;
 	-moz-transition: background-color 350ms;
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
-
+	left: 0px;
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
 	line-height: 50px;
 
+	text-align: left;
+	font-style: strong;
+	font-size: 30px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	-webkit-transition: width 2s, height 2s, -webkit-transform 4s; /* Safari */
+    transition: transform 4s;
+}
+
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	line-height: 140px;
 
 	text-align: right;
 	font-style: strong;
-	font-size: 20pt;
+	font-size: 22px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -380,94 +397,78 @@ This section configures the links in the footer ================================
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
 }
-
 .marquee p:nth-child(1) {
-	animation: left-one 15s ease infinite;
-	-moz-animation: left-one 15s ease infinite;
-	-webkit-animation: left-one 15s ease infinite;
+	animation: left-one 8s ease 1 ;
+	-moz-animation: left-one 8s ease 1;
+	-webkit-animation: left-one 8s ease 1;
 }
 .marquee p:nth-child(2) {
-	animation: left-two 15s ease infinite;
-	-moz-animation: left-two 15s ease infinite;
-	-webkit-animation: left-two 15s ease infinite;
+	animation: left-two 8s ease 1;
+	-moz-animation: left-two 8s ease 1;
+	-webkit-animation: left-two 8s ease 1;
 }
 
-/*------------------------------------
-	Move the Marquee to the Left
---------------------------------------------*/
+.marquee p:nth-child(1) {
+	-ms-transform: translate(0); /* IE 9 */
+    -webkit-transform: translate(0); /* Safari */
+    transform: translate(0);
+}
+.marquee p:nth-child(2) {
+	-ms-transform: translate(0); /* IE 9 */
+    -webkit-transform: translate(0); /* Safari */
+    transform: translate(0);
+}
+
+
+/*---------- Move the Marquee to the Left ----------------*/
+
+@keyframes left-one {
+    0% 	{        transform:translateX(0);    	}
+    50% {        transform:translateX(0);    	}
+	60% {        transform:translateX(-100%);   }
+	90% {        transform:translateX(-100%);   }
+    100%{        transform:translateX(0);   	}
+}
+@keyframes left-two {
+    0% {        transform:translateX(100%);    	}
+    50% {        transform:translateX(100%) 	}
+    60% {        transform:translateX(0);       }
+    100%{        transform:translateX(0);    }
+}
 
 /** Mozilla Firefox Keyframes **/
 @-moz-keyframes left-one {
-	0%	{
-		-moz-transform:translateX(100%);
-	}
-	10% {
-		-moz-transform:translateX(0);
-	}
-	40% {
-		-moz-transform:translateX(0);
-	}
-	50% {
-		-moz-transform:translateX(-100%);
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
+    0%  {        -moz-transform:translateX(0);   }
+    50% {        -moz-transform:translateX(0);   	 }
+	60% {        -moz-transform:translateX(-100%);   }
+	90% {        -moz-transform:translateX(-100%);   }
+    100%{        -moz-transform:translateX(0);   	 }
 }
 @-moz-keyframes left-two {
-	0% {
-		-moz-transform:translateX(100%);
-	}
-	50% {
-		-moz-transform:translateX(100%);
-	}
-	60% {
-		-moz-transform:translateX(0);		
-	}
-	90% {
-		-moz-transform:translateX(0);		
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
-}
-/** Webkit Keyframes **/
-@-webkit-keyframes left-one {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	10% {
-		-webkit-transform:translateX(0);
-	}
-	40% {
-		-webkit-transform:translateX(0);
-	}
-	50% {
-		-webkit-transform:translateX(-100%);
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
-}
-@-webkit-keyframes left-two {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	50% {
-		-webkit-transform:translateX(100%);
-	}
-	60% {
-		-webkit-transform:translateX(0);		
-	}
-	90% {
-		-webkit-transform:translateX(0);		
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0% {        -moz-transform:translateX(100%);    }
+    50% {        -moz-transform:translateX(100%);   }
+    60% {        -moz-transform:translateX(0);      }
+    100%{        -moz-transform:translateX(0);   }
 }
 
-	
+/** Webkit Keyframes **/
+@-webkit-keyframes left-one {
+    0%  {        -webkit-transform:translateX(0);    }
+    50% {        -webkit-transform:translateX(0);   	 }
+	60% {        -webkit-transform:translateX(-100%);    }
+	90% {        -webkit-transform:translateX(-100%);    }
+    100%{        -webkit-transform:translateX(0);   	}
+}
+@-webkit-keyframes left-two {
+    0% {        -webkit-transform:translateX(100%);    }
+    50% {        -webkit-transform:translateX(100%);   }
+    60% {        -webkit-transform:translateX(0);      }
+    100%{        -webkit-transform:translateX(0);   }
+}
+
+
+
+
 	
 	
 /* ========================================================
@@ -773,49 +774,43 @@ left:-65px;
  =================================================== */
 
 #design_thumbs {
-	width: 95%;
+	width: 98%;
 	/*height: auto;*/
 	margin-right: auto;
 	margin-left: auto;
 }
 
-	ul.enlarge{
-		list-style-type:none; /*remove the bullet point*/
-		margin-left: 1%;
-    }
-    ul.enlarge li{
-		display:inline-block; /*places the images in a line*/
-		font-size: 11px;
-		text-align: center;
-		position: relative;
-		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
-    	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
+ul.enlarge{
+	list-style-type:none; /*remove the bullet point*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	width: 95%;
+}
+ul.enlarge li{
+	display:inline-block; /*places the images in a line*/
+	width: 45%;
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
 
-    }
-    ul.enlarge img{
-		background-color:#eae9d4;
-		padding: 6px;
-		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-    }
-	
-	ul.enlarge img.sm {
+}	
+
+ul.enlarge img.sm {
 		display:inline-block;
-		width: 110px;
+		width: 85%;
 		height: auto;
-	}
-	ul.enlarge img.lg {
-		display:inline-block;
-		width: 400px;
-		height: auto;
-	}
-	
-    ul.enlarge span{
+}
+ul.enlarge img.lg {
+	display:inline-block;
+	width: 95%;
+	height: auto;
+}
+ul.enlarge span {
 		position:absolute;
+		width: 215%;
 		left: -9999px;
 		background-color:#eae9d4;
 		padding: 10px;
@@ -830,40 +825,35 @@ left:-65px;
 		-moz-border-radius: 8px;
 		border-radius:8px;
     }
-    ul.enlarge li:hover{
-		z-index: 50;
-		cursor:pointer;
-    }
-    ul.enlarge span img{
-		padding:2px;
-		background:#ccc;
-    }
-    ul.enlarge li:hover span{
-		top: -198px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
-		left: -25px; /*distance from the left of the thumbnail to the left of the popup image*/
-    }
-    ul.enlarge li:hover:nth-child(2) span{
-    	left: -165px;
-    }
-    ul.enlarge li:hover:nth-child(3) span{
-    	left: -303px;
-    }
-    ul.enlarge li:hover:nth-child(4) span{
-		top: -314px;
-    	left: -25px;
-    }
-    ul.enlarge li:hover:nth-child(5) span{
-		top: -314px;
-    	left: -165px;
-    }
-	ul.enlarge li:hover:nth-child(6) span{
-		top: -314px;
-    	left: -303px;
-    }
-    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
-    ul.enlarge img, ul.enlarge span{
-    	behavior: url(pie/PIE.htc);
-    }
+
+ul.enlarge li:hover span{
+		top: -130%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -3%; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+
+ul.enlarge li:hover:nth-child(2) span{
+	left: -109.5%;
+}
+ul.enlarge li:hover:nth-child(3) span{
+	top: -235%;
+	left: -3%;
+}
+ul.enlarge li:hover:nth-child(4) span{
+	top: -235%;
+	left: -109.5%;
+}
+ul.enlarge li:hover:nth-child(5) span{
+	top: -340%;
+	left: -3%;
+}
+ul.enlarge li:hover:nth-child(6) span{
+	top: -340%;
+	left: -109.5%;
+}
+/**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+ul.enlarge img, ul.enlarge span{
+	behavior: url(pie/PIE.htc);
+}
 
 
 .img_popup {
@@ -1176,7 +1166,7 @@ This section is for the contact details in the "contact" page
 
 #contact-form {
     background-color:#e9e5dc;
-    width: 95%;
+    width: 88%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 5%;
@@ -1278,7 +1268,7 @@ ul {
 }
 
 .fr-social-icons {
-  width: 95%;
+  width: 88%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
@@ -1415,7 +1405,7 @@ li img:hover{
 
 /* CSS for the GoogleMaps button */
 #gmap_canvas {
-	width: 95%;
+	width: 88%;
 	height:400px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -1484,7 +1474,7 @@ This section configures the general layout of the majority of the pages
 
 
 #leftHeader {
-
+	height: 100px;
 	width: 100%;
 	background-color: #f6f6f6;
 	margin-right: 5px;
@@ -1518,7 +1508,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerMobile{
 	display: block;
 	width: 100%;
-	height: 140px;
+	height: 100px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -1541,8 +1531,8 @@ This section configures the general layout of the majority of the pages
 	width: 100%;
 	height: auto;
 	background-color: #f6f6f6;
-	margin-top: 5px;
-	margin-bottom: 7px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 5px;
 	overflow-y: no-display;
 	overflow-x: no-display;
@@ -1781,39 +1771,55 @@ This section configures the Back-To-The-Top Button =============================
 /* ==============================================
  		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
 .marquee {
-	width: 100%;
-	height: 50px;
-	margin: 25px auto;
+	width: 96%;
+	height: 100px;
+	margin: 5px 2%;
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
-
 	background-color: green;
-
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-    box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);*/
-
+  	*/
+    text-shadow: 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
 	-webkit-transition: background-color 350ms;
 	-moz-transition: background-color 350ms;
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
-
+	left: 0px;
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
 	line-height: 50px;
 
-
 	text-align: left;
 	font-style: strong;
-	font-size: 11.8pt;
+	font-size: 20px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	-webkit-transition: width 2s, height 2s, -webkit-transform 4s; /* Safari */
+    transition: transform 4s;
+}
+
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	line-height: 100px;
+
+	text-align: right;
+	font-style: strong;
+	font-size: 16px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1822,92 +1828,75 @@ This section configures the Back-To-The-Top Button =============================
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
 }
-
 .marquee p:nth-child(1) {
-	animation: left-one 15s ease infinite;
-	-moz-animation: left-one 15s ease infinite;
-	-webkit-animation: left-one 15s ease infinite;
+	animation: left-one 8s ease 1 ;
+	-moz-animation: left-one 8s ease 1;
+	-webkit-animation: left-one 8s ease 1;
 }
 .marquee p:nth-child(2) {
-	animation: left-two 15s ease infinite;
-	-moz-animation: left-two 15s ease infinite;
-	-webkit-animation: left-two 15s ease infinite;
+	animation: left-two 8s ease 1;
+	-moz-animation: left-two 8s ease 1;
+	-webkit-animation: left-two 8s ease 1;
 }
 
-/*================================
-	Move the Marquee to the Left
-==================================*/
+.marquee p:nth-child(1) {
+	-ms-transform: translate(0); /* IE 9 */
+    -webkit-transform: translate(0); /* Safari */
+    transform: translate(0);
+}
+.marquee p:nth-child(2) {
+	-ms-transform: translate(0); /* IE 9 */
+    -webkit-transform: translate(0); /* Safari */
+    transform: translate(0);
+}
+
+
+/*--------------- Move the Marquee to the Left ------------*/
+@keyframes left-one {
+    0% 	{        transform:translateX(0);    	}
+    50% {        transform:translateX(0);    	}
+	60% {        transform:translateX(-100%);   }
+	90% {        transform:translateX(-100%);   }
+    100%{        transform:translateX(0);   	}
+}
+@keyframes left-two {
+    0% {        transform:translateX(100%);    	}
+    50% {        transform:translateX(100%) 	}
+    60% {        transform:translateX(0);       }
+    100%{        transform:translateX(0);    }
+}
 
 /** Mozilla Firefox Keyframes **/
 @-moz-keyframes left-one {
-	0%	{
-		-moz-transform:translateX(100%);
-	}
-	10% {
-		-moz-transform:translateX(0);
-	}
-	40% {
-		-moz-transform:translateX(0);
-	}
-	50% {
-		-moz-transform:translateX(-100%);
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
+    0%  {        -moz-transform:translateX(0);   }
+    50% {        -moz-transform:translateX(0);   	 }
+	60% {        -moz-transform:translateX(-100%);   }
+	90% {        -moz-transform:translateX(-100%);   }
+    100%{        -moz-transform:translateX(0);   	 }
 }
 @-moz-keyframes left-two {
-	0% {
-		-moz-transform:translateX(100%);
-	}
-	50% {
-		-moz-transform:translateX(100%);
-	}
-	60% {
-		-moz-transform:translateX(0);		
-	}
-	90% {
-		-moz-transform:translateX(0);		
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
+    0% {        -moz-transform:translateX(100%);    }
+    50% {        -moz-transform:translateX(100%);   }
+    60% {        -moz-transform:translateX(0);      }
+    100%{        -moz-transform:translateX(0);   }
 }
+
 /** Webkit Keyframes **/
 @-webkit-keyframes left-one {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	10% {
-		-webkit-transform:translateX(0);
-	}
-	40% {
-		-webkit-transform:translateX(0);
-	}
-	50% {
-		-webkit-transform:translateX(-100%);
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0%  {        -webkit-transform:translateX(0);    }
+    50% {        -webkit-transform:translateX(0);   	 }
+	60% {        -webkit-transform:translateX(-100%);    }
+	90% {        -webkit-transform:translateX(-100%);    }
+    100%{        -webkit-transform:translateX(0);   	}
 }
 @-webkit-keyframes left-two {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	50% {
-		-webkit-transform:translateX(100%);
-	}
-	60% {
-		-webkit-transform:translateX(0);		
-	}
-	90% {
-		-webkit-transform:translateX(0);		
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0% {        -webkit-transform:translateX(100%);    }
+    50% {        -webkit-transform:translateX(100%);   }
+    60% {        -webkit-transform:translateX(0);      }
+    100%{        -webkit-transform:translateX(0);   }
 }
+
+
 
 
 /* ==============================================
@@ -2024,7 +2013,11 @@ This section configures the Back-To-The-Top Button =============================
  /* ==============================================
  This section is for the ImageMap in the "designs" page   ====================================================  */
  
- .main-content-area img{
+.imagemap_icons {
+display: none
+}
+
+.main-content-area img{
 width: 100%;
 height: auto;
 }
@@ -2201,7 +2194,7 @@ left:-65px;
  =================================================== */
 
 #design_thumbs {
-	width: 65%;
+	width: 98%;
 	/*height: auto;*/
 	margin-right: auto;
 	margin-left: auto;
@@ -2209,11 +2202,14 @@ left:-65px;
 
 ul.enlarge{
 	list-style-type:none; /*remove the bullet point*/
-	margin-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
 	width: 95%;
 }
 ul.enlarge li{
 	display:inline-block; /*places the images in a line*/
+	width: 45%;
 	font-size: 11px;
 	text-align: center;
 	position: relative;
@@ -2224,38 +2220,55 @@ ul.enlarge li{
 
 ul.enlarge img.sm {
 		display:inline-block;
-		width: 100px;
+		width: 85%;
 		height: auto;
 }
 ul.enlarge img.lg {
 	display:inline-block;
-	width: 250px;
+	width: 95%;
 	height: auto;
 }
+ul.enlarge span {
+		position:absolute;
+		width: 215%;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius:8px;
+    }
 
 ul.enlarge li:hover span{
-		top: -148px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
-		left: -28px; /*distance from the left of the thumbnail to the left of the popup image*/
+		top: -150%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -5.5%; /*distance from the left of the thumbnail to the left of the popup image*/
 }
 
 ul.enlarge li:hover:nth-child(2) span{
-	left: -153px;
+	left: -113%;
 }
 ul.enlarge li:hover:nth-child(3) span{
-	top: -255px;
-	left: -28px;
+	top: -262%;
+	left: -5.5%;
 }
 ul.enlarge li:hover:nth-child(4) span{
-	top: -255px;
-	left: -153px;
+	top: -262%;
+	left: -113%;
 }
 ul.enlarge li:hover:nth-child(5) span{
-	top: -363px;
-	left: -28px;
+	top: -371%;
+	left: -5.5%;
 }
 ul.enlarge li:hover:nth-child(6) span{
-	top: -363px;
-	left: -153px;
+	top: -371%;
+	left: -113%;
 }
 /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
 ul.enlarge img, ul.enlarge span{
@@ -2558,7 +2571,7 @@ This section is for the contact details in the "contact" page
 
 #contact-form {
     background-color:#e9e5dc;
-    width: 90%;
+    width: 87%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom:5%px;
@@ -2661,7 +2674,7 @@ ul {
 }
 
 .fr-social-icons {
-  width: 90%;
+  width: 87%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
@@ -2797,7 +2810,7 @@ li img:hover{
 
 /* CSS for the GoogleMaps button */
 #gmap_canvas {
-	width: 90%;
+	width: 87%;
 	height:400px;
 	padding-left: 5%;
 	padding-right: 5%;
