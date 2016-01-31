@@ -3,8 +3,8 @@
 
 
 @media (min-width: 481px) and (max-width: 801px){
-	
-/*  
+
+/*	
 >>>>  TABLE OF CONTENT  <<<<
 
 1. General Layout - All Pages
@@ -13,28 +13,32 @@
 	1.3 Footer links
 	1.4 Back-To-The-Top Button 
 	1.5 Animated (Rotating) Logo (appears on index page only
-	1.6 Drop-Down Menu (Navigation Bar)
-7. Design Page 
-	7.1 ImageMap
-	7.2 Pop-up Thumb-nails
-	7.3 Individual house layout
-	7.4 "Exploded" views of architectural drawings
-8. Process Page
-	8.1 Slideshow
-	8.2 Tabbed textbox
-9 Contact Page
-	9.1 Contact details layout
-	9.2 GoogleMaps
-10. SiteMap Page
+	1.6 Animated Marque (Sliding)
+	1.7 Drop-Down Menu (Navigation Bar)
+2. Design Page 
+	2.1 ImageMap
+	2.2 Pop-up Thumb-nails
+	2.3 Individual house layout
+	2.4 "Exploded" views of architectural drawings
+3. Process Page
+	3.1 Slideshow
+	3.2 Tabbed textbox
+4 Contact Page
+	4.1 Contact details layout
+	4.2 Social Media Links
+	4,3 GoogleMaps
+5. SiteMap Page\
 
 */
 
 
-
-
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-This section configures the general layout of the majority of the pages 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+			1. GENERAL LAYOUT
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* ==========================================================
+	1.1 This section configures the general layout of the majority of the pages 
+=========================================================== */
 #wrapper {
 	width:100%;
 	height: auto;
@@ -46,7 +50,7 @@ This section configures the general layout of the majority of the pages
 #leftHeader {
 
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -70,7 +74,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerTab{
 	display: block;
 	width: 49.5%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -89,7 +93,7 @@ This section configures the general layout of the majority of the pages
 }
 #rightHeader {
 	width: 38.45%;
-	height: 128px;
+	height: 108px;
 	margin-left: 0.4%;
 	margin-bottom: 2px;
 	float: right;
@@ -134,7 +138,7 @@ This section configures the general layout of the majority of the pages
 }
 
 /* ==================================================
-This section configures all general texts/fonts and images thoughout the site
+	1.2 This section configures all general texts/fonts and images thoughout the site
 =====================================================*/
 	
 p {
@@ -145,7 +149,6 @@ p {
 }
 .h1 {
 	text-align: left;
-	font-style: strong;
 	font-size: 18pt;
 	font-weight: 700;
 	text-decoration: underline;
@@ -171,7 +174,7 @@ p {
 .h5 {
 	text-align: left;
 	font-size: 14pt;
-	font-weight: 500;
+	font-weight: 600;
 	color: #000000;
 }
 .c2 {
@@ -233,8 +236,8 @@ ul.our_processes {
 }
 
 ul.valu_ullist {
-	colour: red;
-	margin-left: 30px;
+	color: #b40c00;
+	margin-left: 40px;
 	margin-bottom: 30px;
 	list-style-position: outside;
 	text-align: justify;
@@ -243,6 +246,7 @@ li.valu_lilist{
     margin-top: 7px;
 	margin-right: 20px;
 	font-size: 14px;
+	font-style: italic;
 }
 
 /* Positions images - left & right justified - in main */
@@ -262,20 +266,22 @@ li.valu_lilist{
 
 
 
-/* ==============================================
-This section configures the Back-To-The-Top Button ================================================ */
-
-
-
-
-
 /* =========================================================
-This section configures the links in the footer ========================================================== */
+	1.3 This section configures the links in the footer 
+========================================================== */
+
+
+
+/* ==============================================
+	1.4 This section configures the Back-To-The-Top Button 
+================================================ */
+
+
 
 
 
 /* ========================================================
-		1.5 This section configures the ANIMATED LOGO on index page 
+	1.5 This section configures the ANIMATED LOGO on index page 
 ========================================================= */
 
 .img_logo {
@@ -288,7 +294,6 @@ This section configures the links in the footer ================================
   #stage {
     margin: 1em auto;
     -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
     -ms-perspective: 1200px;
     perspective: 1200px;
   }
@@ -296,17 +301,15 @@ This section configures the links in the footer ================================
   .spinner {
     -webkit-animation-name: spinner;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 1;
     -webkit-animation-duration: 6s;
 
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 2;
-    animation-duration: 6s;
+	animation-name: spinner;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 6s;
 
     -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
@@ -315,280 +318,242 @@ This section configures the links in the footer ================================
     animation-play-state: paused;
   }
   
-  /* WebKit and Opera browsers */
+
+
+
+/* WebKit and Opera browsers */
   @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateY(0deg);    }
-    to   { -webkit-transform: rotateY(-360deg); }
+    from { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);   }
+    to   { -webkit-transform: rotateY(-360deg);transform: rotateY(-360deg); }
   }
 
   /* all other browsers */
   @keyframes spinner {
     from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+              transform: rotateY(0deg);
     }
     to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
     }
   }
 
 
+
+
+
+
 /* ==============================================
- 		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
+ 	1.6 This section is for the ANIMATES MARQUE throughout all page   
+====================================================  */
 .marquee {
-	width: 100%;
-	height: 50px;
-	margin: 25px auto;
+	width: 96%;
+	height: 100px;
+	margin: 5px 2%;
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
-
 	background-color: green;
-
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-    box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);*/
-
+  	*/
+    text-shadow: 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
 	-webkit-transition: background-color 350ms;
-	-moz-transition: background-color 350ms;
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
-
+	left: 0px;
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
 	line-height: 50px;
 
-
-	text-align: right;
-	font-style: strong;
-	font-size: 20pt;
+	text-align: left;
+	font-size: 30px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
 
-	transform:translateX(100%);
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+	-webkit-transition: width 2s, height 2s, -webkit-transform 4s; /* Safari */
+    -webkit-transition:-webkit-transform 4s;
+    transition:-webkit-transform 4s;
+    transition: transform 4s;
+    transition: transform 4s, -webkit-transform 4s;
 }
 
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	line-height: 140px;
+
+	text-align: right;
+	font-size: 22px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+	
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
 .marquee p:nth-child(1) {
-	animation: left-one 15s ease infinite;
-	-moz-animation: left-one 15s ease infinite;
-	-webkit-animation: left-one 15s ease infinite;
+	animation: left-one 8s ease 1 ;
+	-moz-animation: left-one 8s ease 1;
+	-webkit-animation: left-one 8s ease 1;
 }
 .marquee p:nth-child(2) {
-	animation: left-two 15s ease infinite;
-	-moz-animation: left-two 15s ease infinite;
-	-webkit-animation: left-two 15s ease infinite;
+	animation: left-two 8s ease 1;
+	-moz-animation: left-two 8s ease 1;
+	-webkit-animation: left-two 8s ease 1;
 }
 
-/*------------------------------------
-	Move the Marquee to the Left
---------------------------------------------*/
+.marquee p:nth-child(1) { /* IE 9 */
+ -webkit-transform: translate(0); /* Safari */
+ transform: translate(0);
+}
+.marquee p:nth-child(2) { /* IE 9 */
+ -webkit-transform: translate(0); /* Safari */
+ transform: translate(0);
+}
+
+
+/*---------- Move the Marquee to the Left ----------------*/
+
+@keyframes left-one {
+    0% 	{        -webkit-transform:translateX(0);        transform:translateX(0);    	}
+    50% {        -webkit-transform:translateX(0);        transform:translateX(0);    	}
+	60% {        -webkit-transform:translateX(-100%);        transform:translateX(-100%);   }
+	90% {        -webkit-transform:translateX(-100%);        transform:translateX(-100%);   }
+    100%{        -webkit-transform:translateX(0);        transform:translateX(0);   	}
+}
+@keyframes left-two {
+    0% {        -webkit-transform:translateX(100%);        transform:translateX(100%);    	}
+    50% {        -webkit-transform:translateX(100%);        transform:translateX(100%) 	}
+    60% {        -webkit-transform:translateX(0);        transform:translateX(0);       }
+    100%{        -webkit-transform:translateX(0);        transform:translateX(0);    }
+}
 
 /** Mozilla Firefox Keyframes **/
-@-moz-keyframes left-one {
-	0%	{
-		-moz-transform:translateX(100%);
-	}
-	10% {
-		-moz-transform:translateX(0);
-	}
-	40% {
-		-moz-transform:translateX(0);
-	}
-	50% {
-		-moz-transform:translateX(-100%);
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
-}
-@-moz-keyframes left-two {
-	0% {
-		-moz-transform:translateX(100%);
-	}
-	50% {
-		-moz-transform:translateX(100%);
-	}
-	60% {
-		-moz-transform:translateX(0);		
-	}
-	90% {
-		-moz-transform:translateX(0);		
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
-}
+
 /** Webkit Keyframes **/
 @-webkit-keyframes left-one {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	10% {
-		-webkit-transform:translateX(0);
-	}
-	40% {
-		-webkit-transform:translateX(0);
-	}
-	50% {
-		-webkit-transform:translateX(-100%);
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0%  {        -webkit-transform:translateX(0);   transform:translateX(0); }
+    50% {        -webkit-transform:translateX(0);  transform:translateX(0); 	 }
+	60% {        -webkit-transform:translateX(-100%); transform:translateX(-100%);   }
+	90% {        -webkit-transform:translateX(-100%);  transform:translateX(-100%);  }
+    100%{        -webkit-transform:translateX(0);   	transform:translateX(0);}
 }
 @-webkit-keyframes left-two {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	50% {
-		-webkit-transform:translateX(100%);
-	}
-	60% {
-		-webkit-transform:translateX(0);		
-	}
-	90% {
-		-webkit-transform:translateX(0);		
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0% {        -webkit-transform:translateX(100%); transform:translateX(100%);   }
+    50% {        -webkit-transform:translateX(100%);  transform:translateX(100%); }
+    60% {        -webkit-transform:translateX(0);    transform:translateX(0);  }
+    100%{        -webkit-transform:translateX(0);  transform:translateX(0); }
 }
 
-	
+
+
+
 	
 	
 /* ========================================================
- 		1.6 This section is for the Drop-Down Menu (Navigation Bar) in all page   ========================================================= */
+ 	1.7 This section is for the Drop-Down Menu (Navigation Bar) in all page   
+========================================================= */
  
- #ddmenu li div.column.mayHide {
-        display: none;
-    }
 
-    /*override the original settings*/
-    #ddmenu ul {
-        width: 250px;
-		float: left;
-        display: none;
-        border-radius: 0;
-		position:absolute;
-    }
+nav { 
+  width: 99%;
+  margin: 0;
+  height: 50px;
+  font-size: 18px;
+}
+.top-heading{
+	height: 40px;
+	line-height: 40px;
+}
 
-    #ddmenu li {
-        position: relative;
-        display: block;
-        font-size: 20px;
-        text-align: left;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
+.toggle + a,
+ .menu { display: none; height: 20px;}
 
-    #ddmenu li.full-width {
-        position: relative;
-    }
+.toggle {
+  display: block;
+  background-color: #b40c00;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  border: none;
+}
 
-    #ddmenu li .dropdown {
-		position: relative;
-        *top: auto; /*for IE7*/
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        text-align: left;
-        background-color: #FFF;
-    }
+.toggle:hover { background-color: #000000; }
 
-    #ddmenu .offset300 {
-        left: 0;
-    }
+[id^=drop]:checked + ul { 
+  display: block;
+  top: -6px;
+  z-index: 20;
 
-    #ddmenu li.full-width div.dropdown {
-        width: auto;
-    }
+ }
 
-    #ddmenu .dd-inner {
-        margin:0;
-        background:none;
-        text-align:left;
-    }
+nav ul li {
+  display: block;
+  width: 95%;
+  padding: 3% 0 3% 10%;
+ 
+}
 
-    /*turn each column to list vertically instead of horizontally */
-    #ddmenu li div.column {
-        width:auto;
-        padding:0;
-        border:none;
-        display:block;
-    }
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px; }
 
-    /*move the arrow icon to right*/
-    #ddmenu i.caret {
-        position:absolute;
-        left:auto;
-        right:14px;
-        top: 22px;
-        border-width:5px;
-    }
+nav ul ul ul a { padding: 0 80px; }
 
+nav a:hover,
+ nav ul ul ul a { background-color: #000000; }
 
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #212121; }
 
-/* All the following are for the div.menu-icon (pure CSS) */
-    #ddmenu div.menu-icon {
-        font-size: 32px; /*icon size*/
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 36px;
-        text-align: center;
-        cursor: pointer;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        background-color: #EEE;
-        border-radius: 3px;
-        margin-bottom:6px;	
-        /*align the icon to the left*/
-        margin-left: 12px;
-        margin-right: auto;
-    }
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+    z-index: 200;
+}
 
-    #ddmenu div.menu-icon::before {
-        content: "";
-        position: absolute;
-        top: 0.25em;
-        left: 4px;
-        width: 1em;
-        height: 0.125em;
-        border-top: 0.375em double #b40c00;
-        border-bottom: 0.125em solid #b40c00;
-        box-sizing: content-box;
-    }
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
 
-    #ddmenu div.menu-icon-active {
-        background-color: #b40c00;
-    }
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
 
-    #ddmenu div.menu-icon-active::before {
-        border-color: #e86600;
-    }
+nav ul ul ul li { position: static;
 
+}
 
+ 
+ 
+ 
+ 
+ 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-				Design Page 
+				2. Design Page 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 /* ==============================================
- This section is for the ImageMap in the "designs" page   ====================================================  */
+ 	2.1 This section is for the ImageMap in the "designs" page   
+====================================================  */
 
 .main-content-area{
 background-color:#F6F6F6;
@@ -617,7 +582,7 @@ left: 64%;
 cursor: pointer;
 }
 
-i.inclusions_tank p{
+i.inclusions_tank span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -629,10 +594,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.inclusions_tank:hover p{
+i.inclusions_tank:hover span.iIMText{
 opacity: 1;
 top: -50px;
 left:-45px;
@@ -649,7 +615,7 @@ left: 8%;
 cursor: pointer;
 }
 
-i.landscaping p{
+i.landscaping span.iIMText {
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -661,10 +627,11 @@ top: -15px;
 left: -1000px;
 width: 280%;
 padding: 8px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.landscaping:hover p{
+i.landscaping:hover span.iIMText{
 opacity: 1;
 top: -72px;
 left:-42px;
@@ -682,7 +649,7 @@ left: 36%;
 cursor: pointer;
 }
 
-i.products_fridge p{
+i.products_fridge span.iIMText {
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -694,10 +661,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.products_fridge:hover p{
+i.products_fridge:hover span.iIMText {
 opacity: 1;
 top: -56px;
 left:-30px;
@@ -714,7 +682,7 @@ left: 24%;
 cursor: pointer;
 }
 
-i.fixtures_door p{
+i.fixtures_door span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -726,10 +694,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.fixtures_door:hover p{
+i.fixtures_door:hover span.iIMText{
 opacity: 1;
 top: -98px;
 left:-45px;
@@ -746,7 +715,7 @@ left: 87%;
 cursor: pointer;
 }
 
-i.features_fireplace p{
+i.features_fireplace span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -758,10 +727,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.features_fireplace:hover p{
+i.features_fireplace:hover span.iIMText{
 opacity: 1;
 top: -50px;
 left:-65px;
@@ -769,53 +739,47 @@ left:-65px;
 
  
 /* ====================================================
- This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
+ 	2.2 This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
  =================================================== */
 
 #design_thumbs {
-	width: 95%;
+	width: 98%;
 	/*height: auto;*/
 	margin-right: auto;
 	margin-left: auto;
 }
 
-	ul.enlarge{
-		list-style-type:none; /*remove the bullet point*/
-		margin-left: 1%;
-    }
-    ul.enlarge li{
-		display:inline-block; /*places the images in a line*/
-		font-size: 11px;
-		text-align: center;
-		position: relative;
-		z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
-    	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
+ul.enlarge{
+	list-style-type:none; /*remove the bullet point*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
+	width: 95%;
+}
+ul.enlarge li{
+	display:inline-block; /*places the images in a line*/
+	width: 45%;
+	font-size: 11px;
+	text-align: center;
+	position: relative;
+	z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+	margin:10px 4% 2px -2%; /*margin:10px 40px 0 20px;*/
 
-    }
-    ul.enlarge img{
-		background-color:#eae9d4;
-		padding: 6px;
-		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-    }
-	
-	ul.enlarge img.sm {
+}	
+
+ul.enlarge img.sm {
 		display:inline-block;
-		width: 110px;
+		width: 85%;
 		height: auto;
-	}
-	ul.enlarge img.lg {
-		display:inline-block;
-		width: 400px;
-		height: auto;
-	}
-	
-    ul.enlarge span{
+}
+ul.enlarge img.lg {
+	display:inline-block;
+	width: 95%;
+	height: auto;
+}
+ul.enlarge span {
 		position:absolute;
+		width: 215%;
 		left: -9999px;
 		background-color:#eae9d4;
 		padding: 10px;
@@ -823,48 +787,40 @@ left:-65px;
 		font-size:.9em;
 		text-align: center;
 		color: #495a62;
-		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
 		box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
 		border-radius:8px;
     }
-    ul.enlarge li:hover{
-		z-index: 50;
-		cursor:pointer;
-    }
-    ul.enlarge span img{
-		padding:2px;
-		background:#ccc;
-    }
-    ul.enlarge li:hover span{
-		top: -198px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
-		left: -25px; /*distance from the left of the thumbnail to the left of the popup image*/
-    }
-    ul.enlarge li:hover:nth-child(2) span{
-    	left: -165px;
-    }
-    ul.enlarge li:hover:nth-child(3) span{
-    	left: -303px;
-    }
-    ul.enlarge li:hover:nth-child(4) span{
-		top: -314px;
-    	left: -25px;
-    }
-    ul.enlarge li:hover:nth-child(5) span{
-		top: -314px;
-    	left: -165px;
-    }
-	ul.enlarge li:hover:nth-child(6) span{
-		top: -314px;
-    	left: -303px;
-    }
-    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
-    ul.enlarge img, ul.enlarge span{
-    	behavior: url(pie/PIE.htc);
-    }
 
+ul.enlarge li:hover span{
+		top: -130%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -3%; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+
+ul.enlarge li:hover:nth-child(2) span{
+	left: -109.5%;
+}
+ul.enlarge li:hover:nth-child(3) span{
+	top: -235%;
+	left: -3%;
+}
+ul.enlarge li:hover:nth-child(4) span{
+	top: -235%;
+	left: -109.5%;
+}
+ul.enlarge li:hover:nth-child(5) span{
+	top: -340%;
+	left: -3%;
+}
+ul.enlarge li:hover:nth-child(6) span{
+	top: -340%;
+	left: -109.5%;
+}
+
+/**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version
+ul.enlarge img, ul.enlarge span{
+	behavior: url(pie/PIE.htc);
+}
+**/
 
 .img_popup {
 	width: 60%;
@@ -880,7 +836,8 @@ enlarge.popup_sm {
 
 
 /* ==============================================
-This section configures the various divs on the individual house design pages ================================================ */
+	2.2 This section configures the various divs on the individual house design pages 
+================================================ */
 
 #plan {
 	width: 40%;
@@ -926,7 +883,7 @@ ul.dimentions {
 
 
 /* ===================================================
-The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
+	2.3The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
 ====================================================== */
 
 ul.exploded{
@@ -944,11 +901,7 @@ ul.exploded{
     ul.exploded img{
 		background-color:#eae9d4;
 		padding: 6px;
-		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
 		border-radius: 4px;
     }
 	
@@ -972,11 +925,7 @@ ul.exploded{
 		font-size:.9em;
 		text-align: center;
 		color: #495a62;
-		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
 		box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
 		border-radius:8px;
     }
     ul.exploded li:hover{
@@ -992,19 +941,19 @@ ul.exploded{
 		left: -4px; /*distance from the left of the thumbnail to the left of the popup image*/
     }
     
-    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version*
     ul.enlarge img, ul.enlarge span{
     	behavior: url(pie/PIE.htc);
     }
-
+*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-					Process Page 
+					3. Process Page 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 /* ===================================================
-The following section is applied to the Slideshow on the Process page 
+	3.1 The following section is applied to the Slideshow on the Process page 
 ====================================================== */
 
 		/* NOTE: Same as the desktop resolution */
@@ -1015,7 +964,7 @@ The following section is applied to the Slideshow on the Process page
 		
 		
 /* ===================================================
-The following section is applied to the Tabbed-Textbox on the Process page 
+	3.2 The following section is applied to the Tabbed-Textbox on the Process page 
 ====================================================== */		
 
 
@@ -1031,11 +980,10 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	border-style: solid;
 	border-width: 1px;
 	border-color: #000;
-	-moz-box-shadow: 0 0 3px #ccc;
-	-webkit-box-shadow: 0 0 3px #ccc;
 	box-shadow: 0 0 6px #333;
 	-moz-border-radius:7px;
     -webkit-border-radius:7px;
+	border-radius:7px;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 	border-bottom-left-radius: 7px;
@@ -1060,7 +1008,11 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	padding-top: 4px;
 	text-align:center;
 	list-style-type: none;
-	align-items:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	            -ms-grid-row-align:center;
+	        align-items:center;
 }
 #tabs li {
 	margin-left: 1.5%;
@@ -1082,11 +1034,10 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	height: 26%;
 	border-top:3px #b40c00 solid;
 	background-color: #eee;
-	-moz-box-shadow: 0 0 3px #000;
-	-webkit-box-shadow: 0 0 3px #000;
 	box-shadow: 0 0 6px #000;
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+	border-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -1123,21 +1074,8 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	font-size: 95%;
 
 }
-/*
-.thumbs {
-	float:left;
-	border:#000 solid 1px;
-	margin-bottom:20px;
-	margin-right:20px;
-}
 
-pre {
-	font-family:inherit;
-	font-size: 11pt;
-	line-height: 130%;
-	padding-top: 2%;
-}
-*/
+
 .line_gap {
 	line-height: 12px;
 }
@@ -1149,6 +1087,7 @@ pre {
 	padding-right: 1%;
 	-moz-border-radius:7px;
     -webkit-border-radius:7px;
+	border-radius:7px;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 	border-bottom-left-radius: 0px;
@@ -1164,19 +1103,19 @@ pre {
 
 
 
-/* >>>>>>>>>>>>>> Contact Page <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> 4. Contact Page <<<<<<<<<<<<<<<<< */
 
 /* ================================================== 
-This section is for the contact details in the "contact" page   
+	4.1 This section is for the contact details in the "contact" page   
 ===================================================== */
 
 /* ================================================== 
-This section is for the contact details in the "contact" page   
+	4.2 This section is for the contact details in the "contact" page   
 ===================================================== */
 
 #contact-form {
     background-color:#e9e5dc;
-    width: 95%;
+    width: 88%;
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 5%;
@@ -1189,6 +1128,7 @@ This section is for the contact details in the "contact" page
     border-left-style: solid;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
+	border-radius:15px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 0px;
@@ -1203,10 +1143,9 @@ This section is for the contact details in the "contact" page
 	margin-bottom: 10px;
 	width: 80%;
 	height: auto;
-	border-style: solid;
-	-ms-transform: skew(11deg, 4deg); /* IE 9 */
-    -webkit-transform: skew(11deg, 4deg); /* Safari */
-    transform: skew(11deg, 4deg); /* Standard syntax */
+	border-style: solid; /* IE 9 */
+	-webkit-transform: skew(11deg, 4deg); /* Safari */
+	transform: skew(11deg, 4deg); /* Standard syntax */
 }
 
 #contact-form h1 {
@@ -1252,11 +1191,11 @@ p.details {
 
 
 /* ====================================================
- This section is for the social media bar/buttons in the "contact" page   
- =================================================== */
- 
+ 	4.2 This section is for the social media bar/buttons in the contact page   
+=================================================== */
+ /*
  @import url(http://fonts.googleapis.com/css?family=Lato);
-
+*/
 
 p > a:hover {
   color: #d9d9d9;
@@ -1278,7 +1217,7 @@ ul {
 }
 
 .fr-social-icons {
-  width: 95%;
+  width: 88%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
@@ -1322,9 +1261,6 @@ li img:hover{
 
 .fa-facebook {
   padding: 10px 14px 7px 14px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1332,9 +1268,6 @@ li img:hover{
 
 .fa-twitter {
   padding: 10px 10px 7px 10px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1347,9 +1280,6 @@ li img:hover{
 
 .fa-rss {
   padding: 10px 12px 7px 12px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1361,9 +1291,6 @@ li img:hover{
 
 .fa-youtube {
   padding: 10px 12px 7px 11px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1375,9 +1302,6 @@ li img:hover{
 
 .fa-linkedin {
   padding: 10px 11px 8px 11px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1390,9 +1314,6 @@ li img:hover{
 
 .fa-google-plus {
   padding: 10px 10px 7px 10px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -1404,8 +1325,8 @@ li img:hover{
 
 
  /* ====================================================
- This section formats the GoogleMap feature in the "contact" page   
- =================================================== */
+ 	4.3 This section formats the GoogleMap feature in the "contact" page   
+=================================================== */
  
  .gmap {
 	border-style: solid;
@@ -1415,7 +1336,7 @@ li img:hover{
 
 /* CSS for the GoogleMaps button */
 #gmap_canvas {
-	width: 95%;
+	width: 88%;
 	height:400px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -1431,6 +1352,7 @@ li img:hover{
     border-left-style: solid;
 	-moz-border-radius:15px;
     -webkit-border-radius:15px;
+	border-radius:15px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-left-radius: 15px;
@@ -1451,28 +1373,37 @@ li img:hover{
 /*  
 >>>>  TABLE OF CONTENT  <<<<
 
-1. General Layout
-2. General text/fonts and images
-3. Back-To-The-Top Button 
-4. Footer links
-5. Drop-Down Menu (Navigation Bar)
-6. Design Page 
-	6.1 ImageMap
-	6.2 Pop-up Thumb-nails
-	6.3 Individual house layout
-	6.4 "Exploded" views of architectural drawings
-7. Process Page
-	7.1 Slideshow
-	7.2 Tabbed textbox
-8 Contact Page
-	8.1 Contact details layout
-	8.2 GoogleMaps
+1. General Layout - All Pages
+	1.1 General Layout/Structure 
+	1.2 General text/fonts and images
+	1.3 Footer links
+	1.4 Back-To-The-Top Button 
+	1.5 Animated (Rotating) Logo (appears on index page only
+	1.6 Animated Marque (Sliding)
+	1.7 Drop-Down Menu (Navigation Bar)
+2. Design Page 
+	2.1 ImageMap
+	2.2 Pop-up Thumb-nails
+	2.3 Individual house layout
+	2.4 "Exploded" views of architectural drawings
+3. Process Page
+	3.1 Slideshow
+	3.2 Tabbed textbox
+4 Contact Page
+	4.1 Contact details layout
+	4.2 GoogleMaps
+5. SiteMap Page\
 
 */
-	
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-This section configures the general layout of the majority of the pages 
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+			1. GENERAL LAYOUT
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* ==========================================================
+	1.1 This section configures the general layout of the majority of the pages 
+=========================================================== */
 
 #wrapper {
 	width: 100%;
@@ -1484,7 +1415,7 @@ This section configures the general layout of the majority of the pages
 
 
 #leftHeader {
-
+	height: 100px;
 	width: 100%;
 	background-color: #f6f6f6;
 	margin-right: 5px;
@@ -1518,7 +1449,7 @@ This section configures the general layout of the majority of the pages
 #leftHeaderSpinnerMobile{
 	display: block;
 	width: 100%;
-	height: 140px;
+	height: 120px;
 	float: left;
 	background-color: #f6f6f6;
 	margin-right: 0.4%;
@@ -1541,8 +1472,8 @@ This section configures the general layout of the majority of the pages
 	width: 100%;
 	height: auto;
 	background-color: #f6f6f6;
-	margin-top: 5px;
-	margin-bottom: 7px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 	padding: 5px;
 	overflow-y: no-display;
 	overflow-x: no-display;
@@ -1577,7 +1508,7 @@ This section configures the general layout of the majority of the pages
 	
 
 /* ==================================================
-This section configures all general texts/fonts and images thoughout the site
+	1.2 This section configures all general texts/fonts and images thoughout the site
 =====================================================*/
 
 /* Positions images - left & right justified - in main */
@@ -1607,7 +1538,6 @@ p {
 }
 .h1 {
 	text-align: left;
-	font-style: strong;
 	font-size: 16pt;
 	font-weight: 800;
 	text-decoration: underline;
@@ -1696,7 +1626,7 @@ ul.our_processes {
 
 
 ul.valu_ullist {
-	colour: red;
+	color: #b40c00;
 	margin-left: 25px;
 	margin-bottom: 25px;
 	list-style-position: outside;
@@ -1711,26 +1641,26 @@ li.valu_lilist{
 
 
 /* ==============================================
-This section configures the Back-To-The-Top Button ================================================ */
+	1.4 This section configures the Back-To-The-Top Button 
+================================================ */
 
 
 
 
 /* ========================================================
-		1.5 This section configures the ANIMATED LOGO on index page 
+	1.5 This section configures the ANIMATED LOGO on index page 
 ========================================================= */
 
 
 .img_logo_mobile {
 	width: 75%;
-	height: 95%;
+	height: 99%;
 	margin-right: 5%;
-	float: right;
+	padding-left: 10%;
 }
  #stage {
     margin: 1em auto;
     -webkit-perspective: 1200px;
-    -moz-perspective: 1200px;
     -ms-perspective: 1200px;
     perspective: 1200px;
   }
@@ -1738,17 +1668,14 @@ This section configures the Back-To-The-Top Button =============================
   .spinner {
     -webkit-animation-name: spinner;
     -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 1;
     -webkit-animation-duration: 6s;
-
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 2;
-    animation-duration: 6s;
+	animation-name: spinner;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-duration: 6s;
 
     -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
@@ -1757,63 +1684,52 @@ This section configures the Back-To-The-Top Button =============================
     animation-play-state: paused;
   }
   
-  /* WebKit and Opera browsers */
-  
-  @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateY(0deg);    }
-    to   { -webkit-transform: rotateY(-360deg); }
+ 
+
+/* WebKit and Opera browsers */
+  @-webkit-keyframes spinner{
+    from{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);}
+    to{-webkit-transform:rotateY(-360deg);transform:rotateY(-360deg);}
   }
 
   /* all other browsers */
-  @keyframes spinner {
-    from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
+  @keyframes spinner{
+    from{
+      -webkit-transform:rotateY(0deg);
+              transform:rotateY(0deg);
+    }to{
+      -webkit-transform: rotateY(-360deg);
+              transform: rotateY(-360deg);
     }
   }
-
 /* ==============================================
- 		1.55 This section is for the ANIMATES MARQUE throughout all page   ====================================================  */
+ 	1.6 This section is for the ANIMATES MARQUE throughout all page   
+====================================================  */
 .marquee {
-	width: 100%;
-	height: 50px;
-	margin: 25px auto;
+	width: 96%;
+	height: 62px;
+	margin: 5px 2%;
 	overflow: hidden;
 	position: relative;
 	/* border: 1px solid #000;
-
 	background-color: green;
-
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
-    box-shadow: inset 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);*/
-
+  	*/
+    text-shadow: 0px 2px 2px  rgba(0, 0, 0, .5), 0px 1px 0px  rgba(250, 250, 250, .2);
 	-webkit-transition: background-color 350ms;
-	-moz-transition: background-color 350ms;
     transition: background-color 350ms;
 }
 
-.marquee p {
+.marquee p.lg_marquee {
 	position: absolute;
-
+	left: 0px;
 	width: 100%;
 	height: 100%;
 
 	margin: 0;
 	line-height: 50px;
 
-
 	text-align: left;
-	font-style: strong;
-	font-size: 11.8pt;
+	font-size: 20px;
 	font-weight: 800;
 	letter-spacing: -2px;
 	color: #b40c00;
@@ -1821,210 +1737,180 @@ This section configures the Back-To-The-Top Button =============================
 	transform:translateX(100%);
 	-moz-transform:translateX(100%);
 	-webkit-transform:translateX(100%);
+	-webkit-transition: width 2s, height 2s, -webkit-transform 4s; /* Safari */
+    -webkit-transition:-webkit-transform 4s;
+    transition:-webkit-transform 4s;
+    transition:transform 4s;
+    transition: transform 4s, -webkit-transform 4s;
 }
 
+.marquee p.sm_marquee {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	line-height: 100px;
+
+	text-align: right;
+	font-size: 16px;
+	font-weight: 800;
+	letter-spacing: -2px;
+	color: #b40c00;
+
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%);
+}
 .marquee p:nth-child(1) {
-	animation: left-one 15s ease infinite;
-	-moz-animation: left-one 15s ease infinite;
-	-webkit-animation: left-one 15s ease infinite;
+	animation: left-one 8s ease 1 ;
+	-moz-animation: left-one 8s ease 1;
+	-webkit-animation: left-one 8s ease 1;
 }
 .marquee p:nth-child(2) {
-	animation: left-two 15s ease infinite;
-	-moz-animation: left-two 15s ease infinite;
-	-webkit-animation: left-two 15s ease infinite;
+	animation: left-two 8s ease 1;
+	-moz-animation: left-two 8s ease 1;
+	-webkit-animation: left-two 8s ease 1;
 }
 
-/*================================
-	Move the Marquee to the Left
-==================================*/
+.marquee p:nth-child(1) { /* IE 9 */
+ -webkit-transform: translate(0); /* Safari */
+ transform: translate(0);
+}
+.marquee p:nth-child(2) { /* IE 9 */
+ -webkit-transform: translate(0); /* Safari */
+ transform: translate(0);
+}
+
+
+/*--------------- Move the Marquee to the Left ------------*/
+@keyframes left-one {
+    0% 	{        -webkit-transform:translateX(0);        transform:translateX(0);    	}
+    50% {        -webkit-transform:translateX(0);        transform:translateX(0);    	}
+	60% {        -webkit-transform:translateX(-100%);        transform:translateX(-100%);   }
+	90% {        -webkit-transform:translateX(-100%);        transform:translateX(-100%);   }
+    100%{        -webkit-transform:translateX(0);        transform:translateX(0);   	}
+}
+@keyframes left-two {
+    0% {        -webkit-transform:translateX(100%);        transform:translateX(100%);    	}
+    50% {        -webkit-transform:translateX(100%);        transform:translateX(100%) 	}
+    60% {        -webkit-transform:translateX(0);        transform:translateX(0);       }
+    100%{        -webkit-transform:translateX(0);        transform:translateX(0);    }
+}
 
 /** Mozilla Firefox Keyframes **/
-@-moz-keyframes left-one {
-	0%	{
-		-moz-transform:translateX(100%);
-	}
-	10% {
-		-moz-transform:translateX(0);
-	}
-	40% {
-		-moz-transform:translateX(0);
-	}
-	50% {
-		-moz-transform:translateX(-100%);
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
-}
-@-moz-keyframes left-two {
-	0% {
-		-moz-transform:translateX(100%);
-	}
-	50% {
-		-moz-transform:translateX(100%);
-	}
-	60% {
-		-moz-transform:translateX(0);		
-	}
-	90% {
-		-moz-transform:translateX(0);		
-	}
-	100%{
-		-moz-transform:translateX(-100%);
-	}
-}
+
 /** Webkit Keyframes **/
 @-webkit-keyframes left-one {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	10% {
-		-webkit-transform:translateX(0);
-	}
-	40% {
-		-webkit-transform:translateX(0);
-	}
-	50% {
-		-webkit-transform:translateX(-100%);
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0%  {        -webkit-transform:translateX(0); transform:translateX(0);   }
+    50% {        -webkit-transform:translateX(0);   transform:translateX(0);	 }
+	60% {        -webkit-transform:translateX(-100%);  transform:translateX(-100%);  }
+	90% {        -webkit-transform:translateX(-100%);   transform:translateX(-100%); }
+    100%{        -webkit-transform:translateX(0);   transform:translateX(0);	}
 }
 @-webkit-keyframes left-two {
-	0% {
-		-webkit-transform:translateX(100%);
-	}
-	50% {
-		-webkit-transform:translateX(100%);
-	}
-	60% {
-		-webkit-transform:translateX(0);		
-	}
-	90% {
-		-webkit-transform:translateX(0);		
-	}
-	100%{
-		-webkit-transform:translateX(-100%);
-	}
+    0% {        -webkit-transform:translateX(100%);   transform:translateX(100%); }
+    50% {        -webkit-transform:translateX(100%);  transform:translateX(100%); }
+    60% {        -webkit-transform:translateX(0);    transform:translateX(0);  }
+    100%{        -webkit-transform:translateX(0);  transform:translateX(0); }
 }
+
+
 
 
 /* ==============================================
- This section is for the Drop-Down Menu (Navigation Bar) in all page   ====================================================  */
+ 	1.7 This section is for the Drop-Down Menu (Navigation Bar) in all page   
+====================================================  */
  
-     #ddmenu li div.column.mayHide {
-        display: none;
-    }
 
-    /*override the original settings*/
-    #ddmenu ul {
-        width: 250px;
-        display: none;
-        border-radius: 0;
-		position:absolute;
-    }
+nav { 
+  width: 99%;
+  margin: 0;
+  height: 50px;
+  font-size: 18px;
+}
+.top-heading{
+	height: 40px;
+	line-height: 40px;
+}
 
-    #ddmenu li {
-        position: relative;
-        display: block;
-        font-size: 20px;
-        text-align: left;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
+.toggle + a,
+ .menu { display: none; height: 20px;}
 
-    #ddmenu li.full-width {
-        position: relative;
-    }
+.toggle {
+  display: block;
+  background-color: #b40c00;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 50px;
+  text-decoration: none;
+  border: none;
+}
 
-    #ddmenu li .dropdown {
-        position: relative;
-        *top: auto; /*for IE7*/
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        text-align: left;
-        background-color: #FFF;
-    }
+.toggle:hover { background-color: #000000; }
 
-    #ddmenu .offset300 {
-        left: 0;
-    }
+[id^=drop]:checked + ul { 
+  display: block;
+  top: -6px;
+  z-index: 20;
 
-    #ddmenu li.full-width div.dropdown {
-        width: auto;
-    }
+ }
 
-    #ddmenu .dd-inner {
-        margin:0;
-        background:none;
-        text-align:left;
-    }
-
-    /*turn each column to list vertically instead of horizontally */
-    #ddmenu li div.column {
-        width:auto;
-        padding:0;
-        border:none;
-        display:block;
-    }
-
-    /*move the arrow icon to right*/
-    #ddmenu i.caret {
-        position:absolute;
-        left:auto;
-        right:14px;
-        top: 22px;
-        border-width:5px;
-    }
-
-
-    /* All the following are for the div.menu-icon (pure CSS) */
-    #ddmenu div.menu-icon {
-        font-size: 32px; /*icon size*/
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 36px;
-        text-align: center;
-        cursor: pointer;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        background-color: #EEE;
-        border-radius: 3px;
-
-        margin-bottom:6px;	
-        /*align the icon to the left*/
-        margin-left: 12px;
-        margin-right: auto;
-    }
-
-    #ddmenu div.menu-icon::before {
-        content: "";
-        position: absolute;
-        top: 0.25em;
-        left: 4px;
-        width: 1em;
-        height: 0.125em;
-        border-top: 0.375em double #b40c00;
-        border-bottom: 0.125em solid #b40c00;
-        box-sizing: content-box;
-    }
-
-    #ddmenu div.menu-icon-active {
-        background-color: #b40c00;
-    }
-
-    #ddmenu div.menu-icon-active::before {
-        border-color: #e86600;
-    }
-
-/* >>>>>>>>>>> Design Page <<<<<<<<<<<<<< */
-
- /* ==============================================
- This section is for the ImageMap in the "designs" page   ====================================================  */
+nav ul li {
+  display: block;
+  width: 90%;
+  padding: 3% 0 3% 10%;
  
- .main-content-area img{
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px; }
+
+nav ul ul ul a { padding: 0 80px; }
+
+nav a:hover,
+ nav ul ul ul a { background-color: #000000; }
+
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #212121; }
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+    z-index: 200;
+}
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul ul li { position: static;
+
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>> 2. Design Page <<<<<<<<<<<<<< */
+
+/* ==============================================
+ 	2.1 This section is for the ImageMap in the "designs" page   
+====================================================  */
+ 
+.imagemap_icons {
+display: none
+}
+
+.main-content-area img{
 width: 100%;
 height: auto;
 }
@@ -2043,7 +1929,7 @@ left: 64%;
 cursor: pointer;
 }
 
-i.inclusions_tank p{
+i.inclusions_tank span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -2055,10 +1941,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.inclusions_tank:hover p{
+i.inclusions_tank:hover span.iIMText {
 opacity: 1;
 top: -50px;
 left:-45px;
@@ -2075,7 +1962,7 @@ left: 8%;
 cursor: pointer;
 }
 
-i.landscaping p{
+i.landscaping span.iIMText {
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -2087,10 +1974,11 @@ top: -15px;
 left: -1000px;
 width: 280%;
 padding: 8px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.landscaping:hover p{
+i.landscaping:hover span.iIMText {
 opacity: 1;
 top: -72px;
 left:-42px;
@@ -2108,7 +1996,7 @@ left: 36%;
 cursor: pointer;
 }
 
-i.products_fridge p{
+i.products_fridge span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -2120,11 +2008,12 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.products_fridge:hover p{
-opacity: 1;
+i.products_fridge:hover span.iIMText {
+opacity: .1;
 top: -56px;
 left:-30px;
 }
@@ -2140,7 +2029,7 @@ left: 24%;
 cursor: pointer;
 }
 
-i.fixtures_door p{
+i.fixtures_door span.iIMText {
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -2152,10 +2041,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.fixtures_door:hover p{
+i.fixtures_door:hover span.iIMText {
 opacity: 1;
 top: -98px;
 left:-45px;
@@ -2172,7 +2062,7 @@ left: 87%;
 cursor: pointer;
 }
 
-i.features_fireplace p{
+i.features_fireplace span.iIMText{
 font-size: 12pt;
 background-color:#F6F6F6;
 color: black;
@@ -2184,10 +2074,11 @@ top: -15px;
 left: -1000px;
 width: 250%;
 padding: 12px;
+-webkit-transition:opacity 1s linear, left 1s linear;
 transition: opacity 1s linear, left 1s linear;
 }
 
-i.features_fireplace:hover p{
+i.features_fireplace:hover span.iIMText{
 opacity: 1;
 top: -50px;
 left:-65px;
@@ -2197,11 +2088,11 @@ left:-65px;
  
  
 /* ====================================================
- This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
+ 	2.2 This section is for the pop-up enlarged views of the thumb-nails in the "designs" page   
  =================================================== */
 
 #design_thumbs {
-	width: 65%;
+	width: 98%;
 	/*height: auto;*/
 	margin-right: auto;
 	margin-left: auto;
@@ -2209,11 +2100,14 @@ left:-65px;
 
 ul.enlarge{
 	list-style-type:none; /*remove the bullet point*/
-	margin-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2%;
 	width: 95%;
 }
 ul.enlarge li{
 	display:inline-block; /*places the images in a line*/
+	width: 45%;
 	font-size: 11px;
 	text-align: center;
 	position: relative;
@@ -2224,46 +2118,61 @@ ul.enlarge li{
 
 ul.enlarge img.sm {
 		display:inline-block;
-		width: 100px;
+		width: 85%;
 		height: auto;
 }
 ul.enlarge img.lg {
 	display:inline-block;
-	width: 250px;
+	width: 95%;
 	height: auto;
 }
+ul.enlarge span {
+		position:absolute;
+		width: 215%;
+		left: -9999px;
+		background-color:#eae9d4;
+		padding: 10px;
+		font-family: 'Droid Sans', sans-serif;
+		font-size:.9em;
+		text-align: center;
+		color: #495a62;
+		box-shadow: 0 0 20px rgba(0,0,0, .75);
+		border-radius:8px;
+    }
 
 ul.enlarge li:hover span{
-		top: -148px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
-		left: -28px; /*distance from the left of the thumbnail to the left of the popup image*/
+		top: -150%; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+		left: -5.5%; /*distance from the left of the thumbnail to the left of the popup image*/
 }
 
 ul.enlarge li:hover:nth-child(2) span{
-	left: -153px;
+	left: -113%;
 }
 ul.enlarge li:hover:nth-child(3) span{
-	top: -255px;
-	left: -28px;
+	top: -262%;
+	left: -5.5%;
 }
 ul.enlarge li:hover:nth-child(4) span{
-	top: -255px;
-	left: -153px;
+	top: -262%;
+	left: -113%;
 }
 ul.enlarge li:hover:nth-child(5) span{
-	top: -363px;
-	left: -28px;
+	top: -371%;
+	left: -5.5%;
 }
 ul.enlarge li:hover:nth-child(6) span{
-	top: -363px;
-	left: -153px;
+	top: -371%;
+	left: -113%;
 }
-/**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+/**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version
 ul.enlarge img, ul.enlarge span{
 	behavior: url(pie/PIE.htc);
 }
+**/
 
 /* ==============================================
-This section configures the various divs on the individual house design pages ================================================ */
+	2.3 This section configures the various divs on the individual house design pages
+================================================ */
 
 
 #plan {
@@ -2313,7 +2222,7 @@ ul.dimentions {
 
 
 /* ===================================================
-The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
+	2.4 The following section is applied to the "exploded" views of architectual drawings on each individual desin page 
 ====================================================== */
 
 ul.exploded{
@@ -2331,11 +2240,7 @@ ul.exploded{
     ul.exploded img{
 		background-color:#eae9d4;
 		padding: 6px;
-		-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 		box-shadow: 0 0 6px rgba(132, 132, 132, .75);
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
 		border-radius: 4px;
     }
 	
@@ -2359,11 +2264,7 @@ ul.exploded{
 		font-size:.9em;
 		text-align: center;
 		color: #495a62;
-		-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
 		box-shadow: 0 0 20px rgba(0,0,0, .75);
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
 		border-radius:8px;
     }
     ul.exploded li:hover{
@@ -2379,21 +2280,21 @@ ul.exploded{
 		left: -4px; /*distance from the left of the thumbnail to the left of the popup image*/
     }
     
-    /**Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    /** Below, see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version*
     ul.enlarge img, ul.enlarge span{
     	behavior: url(pie/PIE.htc);
     }
-
+*/
 
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
-					Process Page 
+					3. Process Page 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 /* ===================================================
-The following section is applied to the Slideshow on the Process page 
+	3.1 The following section is applied to the Slideshow on the Process page 
 ====================================================== */
 
 		/* NOTE: Same as the desktop resolution */
@@ -2402,7 +2303,7 @@ The following section is applied to the Slideshow on the Process page
 
 
 /* ===================================================
-The following section is applied to the Tabbed-Textbox on the Process page 
+	3.2 The following section is applied to the Tabbed-Textbox on the Process page 
 ====================================================== */		
 
 #container {
@@ -2417,8 +2318,6 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	border-style: solid;
 	border-width: 1px;
 	border-color: #000;
-	-moz-box-shadow: 0 0 3px #ccc;
-	-webkit-box-shadow: 0 0 3px #ccc;
 	box-shadow: 0 0 6px #333;
 	-moz-border-radius:7px;
     -webkit-border-radius:7px;
@@ -2446,7 +2345,11 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	padding-top: 4px;
 	text-align:center;
 	list-style-type: none;
-	align-items:center;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	            -ms-grid-row-align:center;
+	        align-items:center;
 }
 #tabs li {
 	margin-left: 2%;
@@ -2468,8 +2371,6 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	height: 26%;
 	border-top:3px #b40c00 solid;
 	background-color: #eee;
-	-moz-box-shadow: 0 0 3px #000;
-	-webkit-box-shadow: 0 0 3px #000;
 	box-shadow: 0 0 6px #000;
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -2508,21 +2409,8 @@ The following section is applied to the Tabbed-Textbox on the Process page
 	font-weight: bold;
 	font-size: 78%;
 }
-/*
-.thumbs {
-	float:left;
-	border:#000 solid 1px;
-	margin-bottom:20px;
-	margin-right:20px;
-}
 
-pre {
-	font-family:inherit;
-	font-size: 9pt;
-	line-height: 130%;
-	padding-top: 2%;
-}
-*/
+
 .line_gap {
 	line-height: 12px;
 }
@@ -2550,18 +2438,18 @@ pre {
 
 
 
-/* >>>>>>>>>>>>>> Contact Page <<<<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> 4. Contact Page <<<<<<<<<<<<<<<<< */
 
 /* ================================================== 
-This section is for the contact details in the "contact" page
+	4.1 This section is for the contact details in the "contact" page
 ===================================================== */
 
 #contact-form {
     background-color:#e9e5dc;
-    width: 90%;
+    width: 87%;
 	padding-left: 5%;
 	padding-right: 5%;
-	padding-bottom:5%px;
+	padding-bottom: 5%;
 
 	margin-left:10px;
     border: 3px #e86600;
@@ -2571,6 +2459,7 @@ This section is for the contact details in the "contact" page
     border-left-style: solid;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;
+	border-radius:15px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 0px;
@@ -2585,10 +2474,9 @@ This section is for the contact details in the "contact" page
 	margin-bottom: 10px;
 	width: 89%;
 	height: auto;
-	border-style: solid;
-	-ms-transform: skew(11deg, 5deg); /* IE 9 */
-    -webkit-transform: skew(11deg, 5deg); /* Safari */
-    transform: skew(11deg, 5deg); /* Standard syntax */
+	border-style: solid; /* IE 9 */
+ 	-webkit-transform: skew(11deg, 5deg); /* Safari */
+ 	transform: skew(11deg, 5deg); /* Standard syntax */
 }
 
 #contact-form h1 {
@@ -2635,11 +2523,11 @@ p.details {
 
 
 /* ====================================================
- This section is for the social media bar/buttons in the "contact" page   
- =================================================== */
- 
+ 	4.2 This section is for the social media bar/buttons in the contact page   
+=================================================== */
+ /*
  @import url(http://fonts.googleapis.com/css?family=Lato);
-
+*/
 
 p > a:hover {
   color: #d9d9d9;
@@ -2661,7 +2549,7 @@ ul {
 }
 
 .fr-social-icons {
-  width: 90%;
+  width: 87%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
@@ -2705,9 +2593,6 @@ li img:hover{
 
 .fa-facebook {
   padding: 10px 14px 7px 14px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2715,9 +2600,6 @@ li img:hover{
 
 .fa-twitter {
   padding: 10px 10px 7px 10px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2730,9 +2612,6 @@ li img:hover{
 
 .fa-rss {
   padding: 10px 12px 7px 12px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2744,9 +2623,6 @@ li img:hover{
 
 .fa-youtube {
   padding: 10px 12px 7px 11px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2758,9 +2634,6 @@ li img:hover{
 
 .fa-linkedin {
   padding: 10px 11px 8px 11px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2773,9 +2646,6 @@ li img:hover{
 
 .fa-google-plus {
   padding: 10px 10px 7px 10px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #e9e5dc;
@@ -2787,8 +2657,8 @@ li img:hover{
 
  
  /* ====================================================
- This section formats the GoogleMap feature in the "contact" page   
- =================================================== */
+ 	4.3 This section formats the GoogleMap feature in the "contact" page   
+=================================================== */
   .gmap {
 	border-style: solid;
 	border-width: 10px;
@@ -2797,7 +2667,7 @@ li img:hover{
 
 /* CSS for the GoogleMaps button */
 #gmap_canvas {
-	width: 90%;
+	width: 87%;
 	height:400px;
 	padding-left: 5%;
 	padding-right: 5%;
