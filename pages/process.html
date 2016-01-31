@@ -56,52 +56,57 @@
 
   
   
-  <nav id="ddmenu">
-    <div class="menu-icon"></div>
-    <ul>
-        <li><a href="../index.html" class="top-heading" >Home</a></li>
-        <li><a href="about.html" class="top-heading" >About</a></li>
-        <li><a href="designs.html" class="top-heading" >Designs</a>
-			<i class="caret"></i>           
-            <div class="dropdown mayRight">
-                <div class="dd-inner">
-                    <div class="column">
-                        <h3>Designs</h3>
-                        <a href="barclay.html">Barclay</a>
-                        <a href="jannsen.html">Jannsen</a>
-                        <a href="novelli.html">Novelli</a>
-                        <a href="preston.html">Preston</a>
-                        <a href="ridgely.html">Ridgely</a>
-                        <a href="sienna.html">Sienna</a>
-                     </div>
-                </div>
-            </div>
-        </li>
-        <li><a href="process.html" class="top-heading">Process</a></li>
-        <li><a href="faq.html" class="top-heading">FAQ</a></li>
-		<li><a href="testimonials.html" class="top-heading">Testimonials</a></li>
-        <li><a href="contact.html" class="top-heading">Contact</a></li>
-     </ul>
-</nav>
-  
-  <div id="main">
-  	
-   <!-- 
-    <span class="h1">Our Process - Build The Right Way</span>
-   
-    -->
-    
-    <!-- The DIV below sets a return point for the "Back To Top" button at the bottom of the page.  
-      	<div id="page_top"></div>
-    -->   
-    <marquee behavior="slide" direction="left"><span class="h1">Our Process - Build The Right Way</span></marquee>
-    
- 
+  <!-- ================================================= -->
 
-    
+		<nav>
+            <!--<div id="logo">Demo Page</div>-->
+            <label for="drop" class="toggle">Menu</label>
+            
+            <input type="checkbox" id="drop" />
+            
+            <ul class="menu">
+            
+              	<li><a href="../index.html" class="top-heading" >Home</a></li>
+              
+              	<li><a href="about.html" class="top-heading">About</a></li>
+              
+              	<li> 
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Designs +</label>
+                    <a href="designs.html" class="top-heading" >Designs</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="barclay.html">The Barclay</a></li>
+                        <li><a href="jannsen.html">The Jannsen</a></li>
+                        <li><a href="novelli.html">The Novelli</a></li>
+                        <li><a href="preston.html">The Preston</a></li>
+                        <li><a href="ridgely.html">The Ridgely</a></li>
+                        <li><a href="sienna.html">The Sienna</a></li>
+                    </ul>
+              	</li>
+          
+                
+                <li><a href="process.html" class="top-heading">Process</a></li>
+                <li><a href="faq.html" class="top-heading">FAQ</a></li>
+                <li><a href="testimonials.html" class="top-heading">Testimonials</a></li>
+                <li><a href="contact.html" class="top-heading">Contacts</a></li>
+            </ul>
+       	</nav>
+
+
+<!-- =================================================== -->
+  
+  <div id="main">  
+
+
+    <div class="marquee">
+			<p class="lg_marquee">Our Process - Build The Right Way</p>
+			<p class="sm_marquee">Your tick of approval is our guarantee</p>
+	</div>
+        
     
     <div id="slideshow1">
- <script language="JavaScript">
+ <script>
 var i = 0;
 var path = new Array();
  
@@ -132,7 +137,7 @@ function swapImage()
 window.onload=swapImage;
 </script>
 
-<img src="../images/mantra.png"  width="90%" height="auto" name="slide" alt="This is a slideshow displaying the different stages of the building process.">
+<img src="../images/mantra.png"  class="slideholder" id="slide" alt="This is a slideshow displaying the different stages of the building process.">
 </div>
 
     
@@ -275,13 +280,13 @@ A floating slab or raft foundation consists of a poured concrete floor in which 
 <p>The lockup stage is is also the point at which the second agreed payment is also made to AllStyle Homes. This lockup payment’s typically a pretty significant percentage of the overall fee so as to assist us in purchasing interior/exterior fittings and fixtures.</p>
 
 <p>Generally speaking, lockup normally means that the following elements are in place:
-<p class="indents">
+<span class="indents">
 	&bull; doors,<br>
 	&bull; windows and skylights,<br>
 	&bull; building wrap / wall wrap,<br>
 	&bull; external walls / cladding / brickwork,<br>
 	&bull; fascia boards and soffit boards
-</p>
+</span>
 </p>
     </div>
     
@@ -403,13 +408,13 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
     <a href="http://www.ridgewayroof.com.au/" target="_blank"><img src="../images/logo/ridgeway_logo.png" alt="Ridgeway Roofing Supplies logo." class="center"/>
     </a>
     
-    <a href="../www.metrotiles.com.au" target="_blank"><img src="../images/logo/metrotiles_logo.jpg" alt="Metrotiles logo." class="center"/>
+    <a href="http://www.metrotiles.com.au" target="_blank"><img src="../images/logo/metrotiles_logo.jpg" alt="Metrotiles logo." class="center"/>
     </a>
     
     <a href="http://www.cwp.com.au/" target="_blank"><img src="../images/logo/wholesalepaintgroup_logo.png" alt="wholesale paint group logo" class="center"/>
   	</a>
     
-    <a href="../www.bunnings.com.au" target="_blank"><img src="../images/logo/bunnings.png" alt="Bunnings Warehouse logo." class="center"/>
+    <a href="http://www.bunnings.com.au" target="_blank"><img src="../images/logo/bunnings.png" alt="Bunnings Warehouse logo." class="center"/>
     </a>
     
     
@@ -438,4 +443,4 @@ $('a.back-to-top, a.simple-back-to-top').click(function() {
 </div>
 </body>
 </html>
-<link href="../css/tab_textbox.css" rel="stylesheet" type="text/css">
+

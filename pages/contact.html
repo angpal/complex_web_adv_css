@@ -37,7 +37,7 @@
 			google.maps.event.addDomListener(window, 'load', init_map);
   	</script>
  
- <!-- End of Google Map Section -------------------------------- -->
+ <!-- =============  End of Google Map Section ============ -->
 
 </head>
 
@@ -47,7 +47,7 @@
 <div id="wrapper">
 
 
-<!--Headers (Left/Right) Section ------------------------- -->
+<!-- ============== Headers (Left/Right) Section ============= -->
 
   <div id="leftHeader">
   </div>
@@ -59,37 +59,58 @@
     Bundaberg QLD 4670 <br>
     Ph: 07 4153 9876</p>
   </div>
-  <!--End of Headers (Left/Right) Section ------------------------- -->
-  
-  <!--Navigation Bar (DropDown) Section ----------------------- -->
-  
-  <nav id="ddmenu">
-    <div class="menu-icon"></div>
-    <ul>
-        <li><a href="../index.html" class="top-heading" >Home</a></li>
-        <li><a href="about.html" class="top-heading" >About</a></li>
-        <li><a href="designs.html" class="top-heading" >Designs</a>
-			<i class="caret"></i>        </li>
-        <li><a href="process.html" class="top-heading">Process</a></li>
-        <li><a href="faq.html" class="top-heading">FAQ</a></li>
-		<li><a href="testimonials.html" class="top-heading">Testimonials</a></li>
-        <li><a href="contact.html" class="top-heading">Contact</a></li>
-     </ul>
-</nav>
+  <!-- ==========End of Headers (Left/Right) Section ============ -->
   
   
+  <!-- ======= Navigation Bar (DropDown) Section ============== -->
+  
+  <!-- ================================================= -->
+
+		<nav>
+            <!--<div id="logo">Demo Page</div>-->
+            <label for="drop" class="toggle">Menu</label>
+            
+            <input type="checkbox" id="drop" />
+            
+            <ul class="menu">
+            
+              	<li><a href="../index.html" class="top-heading" >Home</a></li>
+              
+              	<li><a href="about.html" class="top-heading">About</a></li>
+              
+              	<li> 
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Designs +</label>
+                    <a href="designs.html" class="top-heading" >Designs</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="barclay.html">The Barclay</a></li>
+                        <li><a href="jannsen.html">The Jannsen</a></li>
+                        <li><a href="novelli.html">The Novelli</a></li>
+                        <li><a href="preston.html">The Preston</a></li>
+                        <li><a href="ridgely.html">The Ridgely</a></li>
+                        <li><a href="sienna.html">The Sienna</a></li>
+                    </ul>
+              	</li>
+          
+                
+                <li><a href="process.html" class="top-heading">Process</a></li>
+                <li><a href="faq.html" class="top-heading">FAQ</a></li>
+                <li><a href="testimonials.html" class="top-heading">Testimonials</a></li>
+                <li><a href="contact.html" class="top-heading">Contacts</a></li>
+            </ul>
+       	</nav>
+
+
+<!-- =================================================== -->   
+
   <div id="main">
- 
     
-
-<!--End of Navigation Bar (DropDown) Section ---------------- -->  
-
-     
     <!-- The DIV below sets a return point for the "Back To Top" button at the bottom of the page.  -->
       	<div id="page_top"></div>
     
     
-<!--Contact Form Section ------------------------------------ -->
+<!-- ============ Contact Form Section ==================== -->
 
 <div id="contact-form" >
 <br>
@@ -97,18 +118,16 @@
 
     <h4 class="_12">Is there something we can help you with?
     </h4>
-    <span class="contact_form_h2">We value your comments and welcome your questions. Get in touch with us by one or more of the methos listed below. Please provide as much information as possible for us to help you with your enquiry :)
-    </span>
-    <br>
+<br>
     
     <div class="cont_box">
     	<div class="cont_icons">
         	<ul>
-        		<li><i class="fa fa-car"></i></li><br><br>
-        		<li><i class="fa fa-pencil-square-o"></i></li><br><br>
+        		<li><i class="fa fa-car"></i><br/><br/><br/></li>
+        		<li><i class="fa fa-pencil-square-o"></i><br/><br/><br/></li>
             	<li><i class="fa fa-phone"></i></li>
             	<li><i class="fa fa-fax"></i></li>
-                <i class="fa fa-mobile"></i>
+                <li><i class="fa fa-mobile"></i></li>
                 <li><i class="fa fa-envelope-o"></i></li>
 			</ul>
         </div>
@@ -133,39 +152,39 @@
 							Sunday <br>
 							&nbsp;&nbsp;&nbsp;Closed </p>
     	</div>
-    </div><!-- Closes "cont_box" DIV  -->
+    </div><!-- Closes "cont_box" DIV  ================ -->
     
     
     
-	</div>  <!-- Closes "contact-form" DIV  -->
+	</div>  <!-- Closes "contact-form" DIV  ============= -->
     
 
 	<div class="fr-social-icons">
   <h4 class="_12">Follow us on</h4>
   <ul class="social-icons">
     <li>
-      <a href="" title="Facebook" class="social-icon"><img src="../images/sm-facebook.png" /></a>
+      <a href="" title="Facebook" class="social-icon"><img src="../images/sm-facebook.png" alt="The Facebook logo"/></a>
     </li>
     <li>
-      <a href="" title="Twitter" class="social-icon"><img src="../images/sm-twitter.png"/></a>
+      <a href="" title="Twitter" class="social-icon"><img src="../images/sm-twitter.png" alt="The Twitter logo"/></a>
       </li>
 
     <li>
-      <a href="" title="Flickr" class="social-icon"><img src="../images/sm-flickr.png"/></a>
+      <a href="" title="Flickr" class="social-icon"><img src="../images/sm-flickr.png" alt="The Flickr logo"/></a>
     </li>
     <li>
-      <a href="" title="Youtube" class="social-icon"><img src="../images/sm-youtube.png"/></a>
+      <a href="" title="Youtube" class="social-icon"><img src="../images/sm-youtube.png" alt="The Youtube logo"/></a>
     </li>
     <li>
-      <a href="" title="Dropbox" class="social-icon"><img src="../images/sm-dropbox.png"/></a>
+      <a href="" title="Dropbox" class="social-icon"><img src="../images/sm-dropbox.png" alt="The Dropbox logo"/></a>
     </li>
     <li>
-      <a href="" title="Google +" class="social-icon"><img src="../images/sm-google+.png"/></a>
+      <a href="" title="Google +" class="social-icon"><img src="../images/sm-google+.png" alt="The Google+ logo"/></a>
     </li>
   </ul>
   <h4 class="_12">Our location</h4>
   
-</div>  <!-- Closes "fr-social-icons" DIV  -->
+</div>  <!-- Closes "fr-social-icons" DIV  ============ -->
 
  
     
@@ -198,17 +217,17 @@
     </form>
     <br><br><br>
 </div>
-
-<!--End of Contact Form Section ------------------------------ -->
+-->
+<!-- End of Contact Form Section ============== -->
 
  
- <!--Google Map Section -------------------------------------- -->
+ <!-- Google Map Section ==================== -->
 
   		<div id="gmap_canvas" >
     	
 		<!-- Style sheet for GoogleMaps -->
 
-  		<style>
+  		<style scoped>
 			#gmap_canvas img{max-width:none!important;background:none!important}
     	</style>
     
@@ -217,14 +236,14 @@
         
        </div>   <!-- Closes "gmap_canvas" DIV  -->
  	
-    <a href="#page_top" >Back to Top <img src="../images/up_arrow.png" alt="Up arrow symbol" width="20px" height="auto" /></a>
+    <a href="#page_top" >Back to Top <img src="../images/up_arrow.png" alt="Up arrow symbol" width="20" height="25" /></a>
     
   
   </div>  <!-- Closes "main" DIV  -->
   
 
   
-  <!--SideBar Section ----------------------------------- -->
+  <!-- SideBar Section -===================== -->
   
   <div id="sidebar">
   
@@ -255,18 +274,18 @@
     <a href="http://www.ridgewayroof.com.au/" target="_blank"><img src="../images/logo/ridgeway_logo.png" alt="Ridgeway Roofing Supplies logo." class="center"/>
     </a>
     
-    <a href="../www.metrotiles.com.au" target="_blank"><img src="../images/logo/metrotiles_logo.jpg" alt="Metrotiles logo." class="center"/>
+    <a href="http://www.metrotiles.com.au" target="_blank"><img src="../images/logo/metrotiles_logo.jpg" alt="Metrotiles logo." class="center"/>
     </a>
     
     <a href="http://www.cwp.com.au/" target="_blank"><img src="../images/logo/wholesalepaintgroup_logo.png" alt="wholesale paint group logo" class="center"/>
   	</a>
     
-    <a href="../www.bunnings.com.au" target="_blank"><img src="../images/logo/bunnings.png" alt="Bunnings Warehouse logo." class="center"/>
+    <a href="http://www.bunnings.com.au" target="_blank"><img src="../images/logo/bunnings.png" alt="Bunnings Warehouse logo." class="center"/>
     </a>
     
     
     	
-    <p><img src="../images/spacer1.png" alt="Text divider to separate paragrapghs." class="sidespacer" />
+    <p><img src="http://images/spacer1.png" alt="Text divider to separate paragrapghs." class="sidespacer" />
     </p>
         
     
@@ -276,21 +295,17 @@
     <a href="https://www.cbussuper.com.au" target="_blank"><img src="../images/logo/cbus_ais_logo.png" alt="cbus – an industry superfund logo" class="center"/>
     </a>
     
-  </div>
-  
-   <!--End of SideBar Section ------------------------- -->
+  </div>   <!-- Closes SideBar Section ============ -->
    
    
-    <!--Footer Section -------------------------------- -->
+    <!-- Footer Section ======================= -->
   <div id="footer">
   		<a href="../documents/terms_and_conditions.pdf" target="_blank" class="class2">Terms and Conditions</a> |
         <a href="../documents/privacy_statement.pdf" target="_blank" class="class2">Privacy Statement</a> |
 		<a href="sitemap.html" class="class2">Sitemap</a> |
         &copy; 2015 AllStyle Homes
-  </div>
+  </div>  <!-- End of Footer Section ===================== -->
   
-  <!--End of Footer Section -------------------------------- -->
-  
-</div>
+</div>  <!-- Closes "wrapper" DIV  -->
 </body>
 </html>
