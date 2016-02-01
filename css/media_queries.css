@@ -323,8 +323,10 @@ li.valu_lilist{
 
 /* WebKit and Opera browsers */
   @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateY(0deg); transform: rotateY(0deg);   }
-    to   { -webkit-transform: rotateY(-360deg);transform: rotateY(-360deg); }
+    from { -webkit-transform: rotateY(0deg); 
+		transform: rotateY(0deg);   }
+    to   { -webkit-transform: rotateY(-360deg);
+		transform: rotateY(-360deg); }
   }
 
   /* all other browsers */
@@ -472,12 +474,13 @@ li.valu_lilist{
 nav { 
   width: 99%;
   margin: 0;
-  height: 50px;
+  height: 30px;
   font-size: 18px;
 }
+
 .top-heading{
-	height: 40px;
-	line-height: 40px;
+	height: 15px;
+	line-height: 15px;
 }
 
 .toggle + a,
@@ -489,7 +492,7 @@ nav {
   padding: 0 10px;
   color: #FFF;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 30px;
   text-decoration: none;
   border: none;
 }
@@ -498,20 +501,28 @@ nav {
 
 [id^=drop]:checked + ul { 
   display: block;
-  top: -6px;
+  top: -1px;
   z-index: 20;
 
  }
+nav ul {
+  float: left;
+  width: 80%;
+  padding: 0;
+  margin: 1px 0;
+  list-style: none;
+  position: relative;
+}
 
 nav ul li {
   display: block;
-  width: 95%;
-  padding: 3% 0 3% 10%;
+  width:50%;
+  padding: 2% 0 2% 10%;
  
 }
 
 nav ul ul .toggle,
- nav ul ul a { padding: 0 40px; }
+ nav ul ul a { padding: 0 40px; line-height: 30px;}
 
 nav ul ul ul a { padding: 0 80px; }
 
@@ -1275,7 +1286,7 @@ li img:hover{
 
 .fa-twitter:hover {
   background-color: #00aced;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-rss {
@@ -1309,7 +1320,7 @@ li img:hover{
 
 .fa-linkedin:hover {
   background-color: #0073a4;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-google-plus {
@@ -1482,7 +1493,7 @@ li img:hover{
 #soc_media {
 	width: 95%;
 	height: auto;
-	border: 1px red solid;
+	border: 1px #b40c00 solid;
 }
 
 #sidebar {
@@ -1831,8 +1842,8 @@ nav {
   font-size: 18px;
 }
 .top-heading{
-	height: 40px;
-	line-height: 40px;
+	height: 20px;
+	line-height: 20px;
 }
 
 .toggle + a,
@@ -1857,10 +1868,17 @@ nav {
   z-index: 20;
 
  }
-
+nav ul {
+  float: left;
+  width: 80%;
+  padding: 0;
+  margin: 5px 0;
+  list-style: none;
+  position: relative;
+}
 nav ul li {
   display: block;
-  width: 90%;
+  width: 80%;
   padding: 3% 0 3% 10%;
  
 }
@@ -2607,7 +2625,7 @@ li img:hover{
 
 .fa-twitter:hover {
   background-color: #00aced;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-rss {
@@ -2641,7 +2659,7 @@ li img:hover{
 
 .fa-linkedin:hover {
   background-color: #0073a4;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-google-plus {

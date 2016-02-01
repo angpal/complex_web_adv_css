@@ -47,7 +47,7 @@ body {
 
 #wrapper {
 	width: 800px;
-	height: 998px;
+	height: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
@@ -1429,7 +1429,7 @@ li img:hover{
 
 .fa-twitter:hover {
   background-color: #00aced;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-rss {
@@ -1469,7 +1469,7 @@ li img:hover{
 
 .fa-linkedin:hover {
   background-color: #0073a4;
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px #b40c00;
 }
 
 .fa-google-plus {
